@@ -3,31 +3,35 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+  --bg-primary: #080808;
+  --bg-secondary: #0F0F0F;
+  --bg-surface: #1A1A1A;
+  --text-primary: #F0EEE8;
+  --text-muted: rgba(240, 238, 232, 0.5);
+  --text-subtle: rgba(240, 238, 232, 0.3);
+  --accent-steel: #8A9BA8;
+  --accent-steel-hover: #9EADB9;
+  --border: #1A1A1A;
+  --border-steel: rgba(138, 155, 168, 0.3);
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+.grid-bg {
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg stroke='%238A9BA8' stroke-width='0.3' opacity='0.08'%3E%3Cpath d='M60 0L0 0 0 60'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* Custom transitions and scroll behaviors */
+html {
+  scroll-behavior: smooth;
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .transition-steel {
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
