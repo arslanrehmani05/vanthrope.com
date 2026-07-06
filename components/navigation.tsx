@@ -22,7 +22,7 @@ export default function Navigation() {
           className="flex items-center text-text-primary hover:opacity-80 transition-steel"
           style={{ minHeight: '44px' }}
         >
-          <span className="text-accent-gold font-black mr-2">{"//"}</span>
+          <span className="text-accent-steel font-black text-xl mr-2">{"//"}</span>
           <span className="font-black tracking-tight text-lg uppercase">Vanthrope</span>
         </a>
 
