@@ -10,7 +10,7 @@ export default function Footer() {
           {/* Column 1: Brand Info */}
           <div className="flex flex-col gap-4">
             <div className="flex items-center text-text-primary">
-              <span className="text-accent-steel font-black mr-2">{"//"}</span>
+              <span className="text-accent-gold font-black mr-2">{"//"}</span>
               <span className="font-black tracking-tight uppercase text-lg">Vanthrope</span>
             </div>
             <p className="text-xs text-text-muted leading-relaxed max-w-xs">

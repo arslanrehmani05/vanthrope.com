@@ -17,6 +17,7 @@ const config: Config = {
         'text-subtle': 'var(--text-subtle)',
         'accent-steel': 'var(--accent-steel)',
         'accent-steel-hover': 'var(--accent-steel-hover)',
+        'accent-gold': 'var(--accent-gold)',
         'border-color': 'var(--border)',
         'border-steel': 'var(--border-steel)',
       },
