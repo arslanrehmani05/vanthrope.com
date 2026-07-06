@@ -22,6 +22,8 @@ export const metadata: Metadata = {
   },
 };
 
+const gaId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -31,7 +33,7 @@ export default function RootLayout({
     <html lang="en" className={`${inter.variable} font-sans`}>
       <body className="bg-bg-primary text-text-primary antialiased min-h-screen selection:bg-accent-steel/20 selection:text-text-primary">
         {children}
-        <GoogleAnalytics gaId="G-3FSYKMYFJ2" />
+        {gaId && <GoogleAnalytics gaId={gaId} />}
       </body>
     </html>
   );
