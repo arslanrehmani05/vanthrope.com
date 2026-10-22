@@ -1,0 +1,7 @@
+{
+  "name": "Vanthrope | Operational AI Systems",
+  "description": "Vanthrope designs, builds, and deploys custom AI agent systems that replace manual operations permanently for mid-market businesses.",
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
