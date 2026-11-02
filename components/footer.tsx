@@ -8,7 +8,7 @@ export default function Footer() {
   const legalEntity = getPlaceholder('LEGAL_ENTITY');
 
   return (
-    <footer className="bg-[#080808] border-t border-border-color pt-24 pb-12 text-text-muted">
+    <footer className="bg-bg-primary border-t border-border-color pt-24 pb-12 text-text-muted">
       <div className="max-w-7xl mx-auto px-6">
         
         {/* Main Columns Grid */}
@@ -21,7 +21,7 @@ export default function Footer() {
               <span className="font-medium tracking-tight text-lg text-text-primary">Vanthrope</span>
             </div>
             <p className="text-xs text-text-muted leading-relaxed max-w-sm">
-              We design, build, and deploy custom software, automations, and AI agents that run the unglamorous parts of a business. Services only. No subscription software product.
+              Vanthrope engineers custom operational software, deterministic data pipelines, and mission-critical autonomous agent swarms for mid-market enterprises.
             </p>
             <div className="text-[11px] font-mono text-text-subtle pt-2 space-y-1">
               <div>

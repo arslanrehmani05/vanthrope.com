@@ -10,15 +10,12 @@ export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
 
   const mainLinks = [
-    { label: 'Solutions', href: '/solutions' },
+    { label: 'Capabilities', href: '/solutions' },
     { label: 'Agents', href: '/agents' },
-    { label: 'Services', href: '/services' },
-    { label: 'Work', href: '/work' },
-    { label: 'Method', href: '/method' },
+    { label: 'Case Studies', href: '/work' },
+    { label: 'Methodology', href: '/method' },
     { label: 'Tools', href: '/tools' },
-    { label: 'Security', href: '/security' },
-    { label: 'Proof', href: '/proof-ledger' },
-    { label: 'Fit', href: '/fit' },
+    { label: 'Proof Ledger', href: '/proof-ledger' },
   ];
 
   return (

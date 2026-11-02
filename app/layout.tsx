@@ -10,15 +10,24 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Vanthrope | Operational Systems Firm",
-  description: "Vanthrope audits, designs, and builds custom software, automations, and AI agents that run the unglamorous parts of business operations, kept safe and measurable.",
+  title: "Vanthrope | Operational Systems & Autonomous Agents",
+  description: "Custom operational software, deterministic data pipelines, and autonomous agent systems for mid-market enterprises.",
   metadataBase: new URL("https://vanthrope.com"),
+  icons: {
+    icon: [
+      { url: '/icon.svg', type: 'image/svg+xml' },
+      { url: '/icon.png', sizes: '32x32', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/icon.png', sizes: '180x180', type: 'image/png' },
+    ],
+  },
   alternates: {
     canonical: "https://vanthrope.com",
   },
   openGraph: {
-    title: "Vanthrope | Operational Systems Firm",
-    description: "Custom software, automations, and agents that run unglamorous business operations, kept safe and measurable.",
+    title: "Vanthrope | Operational Systems & Autonomous Agents",
+    description: "Custom operational software, deterministic data pipelines, and autonomous agent systems for mid-market enterprises.",
     url: "https://vanthrope.com",
     siteName: "Vanthrope",
     locale: "en_US",
