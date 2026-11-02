@@ -23,9 +23,22 @@ export default function Footer() {
             <p className="text-xs text-text-muted leading-relaxed max-w-sm">
               We design, build, and deploy custom software, automations, and AI agents that run the unglamorous parts of a business. Services only. No subscription software product.
             </p>
-            <div className="text-[11px] font-mono text-text-subtle pt-2">
-              <span>Operating model: </span>
-              <span className="text-text-muted font-medium">{teamModel}</span>
+            <div className="text-[11px] font-mono text-text-subtle pt-2 space-y-1">
+              <div>
+                <span>Operating model: </span>
+                <span className="text-text-muted font-medium">Founder-led (Arslan Rehmani, Principal Systems Architect)</span>
+              </div>
+              <div>
+                <span>Founder ledger: </span>
+                <a
+                  href="https://arslanrehmani.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-text-primary underline hover:text-accent-steel transition-steel"
+                >
+                  arslanrehmani.com
+                </a>
+              </div>
             </div>
             {legalEntity && (
               <div className="text-[10px] text-text-subtle mt-2 p-3 bg-bg-secondary border border-border-color">

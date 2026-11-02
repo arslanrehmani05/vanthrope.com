@@ -6,18 +6,18 @@ export default function VerifiedProofStrip() {
   const metrics = [
     {
       evidence: getVerifiedEvidence('ev-tm-01'),
-      headline: '48h → 10h weekly',
-      subtext: 'Loom capacity & dispatch coordination',
+      headline: '10 clerks → 1 operator',
+      subtext: '27 looms, PKR 3 crore/mo managed',
     },
     {
       evidence: getVerifiedEvidence('ev-bh-01'),
-      headline: '7 operational feeds',
-      subtext: 'Automated daily ledger reconciliation',
+      headline: '3,000+ daily skins',
+      subtext: 'Real-time yield, 0% grading discrepancies',
     },
     {
       evidence: getVerifiedEvidence('ev-fin-01'),
-      headline: '100% schema-validated',
-      subtext: 'Pre-posting double-entry check gate',
+      headline: '3 days → 45 min',
+      subtext: '98% automated reconciliation match rate',
     },
     {
       evidence: getVerifiedEvidence('ev-trust-01'),

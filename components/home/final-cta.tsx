@@ -45,6 +45,18 @@ export default function FinalCta() {
           Direct founder response guaranteed within 24 business hours.
         </div>
 
+        <div className="mt-8 pt-8 border-t border-border-color max-w-xl text-center text-xs font-mono text-text-subtle">
+          <span>Led by Arslan Rehmani, Founder &amp; Principal Systems Architect. For personal engineering field notes, open proof ledger, and interactive diagnostic scans, visit </span>
+          <a
+            href="https://arslanrehmani.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-text-primary underline hover:text-accent-steel transition-steel font-semibold inline-flex items-center gap-1"
+          >
+            arslanrehmani.com &rarr;
+          </a>
+        </div>
+
       </div>
     </section>
   );

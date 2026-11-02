@@ -60,7 +60,7 @@ export default function AboutPage() {
                     Arslan Rehmani
                   </h2>
                   <div className="text-xs font-mono text-accent-steel mt-1">
-                    Founder & Systems Architect
+                    Founder &amp; Principal Systems Architect
                   </div>
                   <div className="text-[11px] font-mono text-text-subtle mt-0.5">
                     {teamModel}
@@ -83,8 +83,20 @@ export default function AboutPage() {
                 </p>
 
                 <p>
-                  As the engineer behind TextileMode ERP (automating loom capacity for mid-market textile manufacturing) and Belhide Ecommerce Intelligence (unifying multi-channel order feeds), Arslan works directly with every Vanthrope client from initial diagnostic sprint to production deployment.
+                  As the engineer behind TextileMode ERP (automating loom capacity for mid-market textile manufacturing) and Belhide Operational Intelligence (unifying real-time tannery yield and order feeds), Arslan works directly with every Vanthrope client from initial diagnostic sprint to production deployment.
                 </p>
+
+                <div className="p-4 bg-bg-primary border border-border-color text-xs text-text-muted leading-relaxed font-mono">
+                  For Arslan&apos;s personal engineering field notes, open proof ledger, and interactive diagnostic scans, visit{' '}
+                  <a
+                    href="https://arslanrehmani.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-text-primary underline hover:text-accent-steel transition-steel inline-flex items-center gap-1 font-semibold"
+                  >
+                    arslanrehmani.com <ArrowRight className="w-3.5 h-3.5" />
+                  </a>
+                </div>
 
                 <div className="pt-4 border-t border-border-color flex flex-wrap gap-6 text-xs font-mono">
                   <Link

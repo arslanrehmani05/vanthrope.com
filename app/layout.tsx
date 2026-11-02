@@ -34,12 +34,18 @@ const structuredData = {
       "@id": "https://vanthrope.com/#organization",
       "name": "Vanthrope",
       "url": "https://vanthrope.com",
-      "description": "Operational systems firm designing and building custom software, automations, and AI agents.",
+      "logo": "https://vanthrope.com/icon.svg",
       "founder": {
         "@type": "Person",
         "name": "Arslan Rehmani",
-        "jobTitle": "Founder & Systems Architect"
-      }
+        "jobTitle": "Principal Systems Architect",
+        "url": "https://arslanrehmani.com",
+        "sameAs": [
+          "https://github.com/arslanrehmani05",
+          "https://linkedin.com/in/arslanrehmani"
+        ]
+      },
+      "description": "High-end operational AI agency that designs, builds, and deploys custom software, deterministic data pipelines, and autonomous agent systems for mid-market enterprises."
     },
     {
       "@type": "ProfessionalService",
