@@ -18,7 +18,7 @@ export default function Footer() {
           <div className="lg:col-span-2 flex flex-col gap-4">
             <div className="flex items-center gap-2.5 text-text-primary">
               <VanthropeLogo className="w-7 h-7" />
-              <span className="font-black tracking-tight uppercase text-lg">Vanthrope</span>
+              <span className="font-medium tracking-tight text-lg text-text-primary">Vanthrope</span>
             </div>
             <p className="text-xs text-text-muted leading-relaxed max-w-sm">
               We design, build, and deploy custom software, automations, and AI agents that run the unglamorous parts of a business. Services only. No subscription software product.

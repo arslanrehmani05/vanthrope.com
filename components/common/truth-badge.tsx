@@ -13,12 +13,12 @@ export default function TruthBadge({ caseType, maturity, evidenceId, className =
   return (
     <div className={`flex flex-wrap items-center gap-2 ${className}`}>
       {caseType && (
-        <span className="inline-flex items-center border border-accent-steel/40 text-accent-steel text-[10px] font-bold tracking-widest uppercase px-2.5 py-1">
-          {caseType === 'Own business' ? 'Own Business (Co-owned Brand)' : caseType === 'Demo product' ? 'Demo Product (Synthetic Data)' : caseType}
+        <span className="inline-flex items-center rounded-full border border-border-color bg-bg-surface text-text-muted text-[10px] font-mono tracking-wider px-2.5 py-0.5">
+          {caseType === 'Own business' ? 'Own Business (Co-owned)' : caseType === 'Demo product' ? 'Demo Product' : caseType}
         </span>
       )}
       {maturity && (
-        <span className="inline-flex items-center border border-accent-gold/40 text-accent-gold text-[10px] font-bold tracking-widest uppercase px-2.5 py-1">
+        <span className="inline-flex items-center rounded-full border border-accent-gold/30 bg-accent-gold/5 text-accent-gold text-[10px] font-mono tracking-wider px-2.5 py-0.5">
           {maturity}
         </span>
       )}

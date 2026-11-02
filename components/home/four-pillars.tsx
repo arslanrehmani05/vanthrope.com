@@ -36,12 +36,12 @@ export default function FourPillars() {
     <section className="bg-bg-primary py-32 sm:py-40 border-b border-border-color">
       <div className="max-w-7xl mx-auto px-6">
         
-        <span className="text-xs font-bold tracking-widest uppercase text-accent-steel mb-6 block">
-          OPERATIONAL POSITIONING
+        <span className="eyebrow mb-6">
+          Operational Positioning
         </span>
 
         <div className="flex flex-col gap-6 mb-20 text-left max-w-4xl">
-          <h2 className="text-3xl md:text-5xl font-black tracking-tight text-text-primary leading-tight">
+          <h2 className="text-3xl md:text-5xl font-medium tracking-tight text-text-primary leading-tight">
             How we engineer systems that keep working.
           </h2>
           <p className="text-base text-text-muted leading-relaxed max-w-2xl font-normal">
@@ -54,18 +54,18 @@ export default function FourPillars() {
           {pillars.map((pillar, idx) => (
             <div
               key={idx}
-              className="bg-bg-secondary border border-border-steel/20 p-8 sm:p-10 flex flex-col justify-between text-left"
+              className="bg-bg-secondary rounded-2xl border border-border-color p-8 sm:p-10 flex flex-col justify-between text-left transition-all hover:border-white/20"
             >
               <div>
                 <div className="flex items-center justify-between pb-6 border-b border-border-color mb-6">
-                  <span className="text-4xl font-black text-accent-steel font-mono">
+                  <span className="text-3xl font-medium text-text-primary font-mono">
                     {pillar.num}
                   </span>
-                  <span className="text-[10px] font-mono tracking-widest uppercase text-text-subtle">
+                  <span className="text-[11px] font-mono tracking-wider uppercase text-text-subtle">
                     {pillar.subtitle}
                   </span>
                 </div>
-                <h3 className="text-xl font-bold tracking-tight text-text-primary uppercase mb-4">
+                <h3 className="text-xl font-semibold tracking-tight text-text-primary mb-3">
                   {pillar.title}
                 </h3>
                 <p className="text-sm text-text-muted leading-relaxed mb-6 font-normal">
@@ -73,7 +73,7 @@ export default function FourPillars() {
                 </p>
               </div>
 
-              <div className="pt-4 border-t border-border-steel/10 text-xs font-mono text-accent-steel/90">
+              <div className="pt-4 border-t border-border-color text-xs font-mono text-text-muted">
                 Key Standard: {pillar.benefit}
               </div>
             </div>
@@ -83,7 +83,7 @@ export default function FourPillars() {
         <div className="mt-16 text-center">
           <Link
             href="/method"
-            className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-accent-steel hover:text-accent-steel-hover transition-steel"
+            className="inline-flex items-center gap-2 text-xs font-medium text-text-primary hover:text-text-muted transition-colors"
             style={{ minHeight: '44px' }}
           >
             Review our 5-stage method in full <span className="text-sm">→</span>

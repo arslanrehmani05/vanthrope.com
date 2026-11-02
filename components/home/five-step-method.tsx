@@ -53,13 +53,13 @@ export default function FiveStepMethod() {
     <section id="method" className="bg-bg-primary py-32 sm:py-40 border-b border-border-color">
       <div className="max-w-7xl mx-auto px-6">
         
-        <span className="text-xs font-bold tracking-widest uppercase text-accent-steel mb-6 block">
-          OUR 5-STAGE METHOD
+        <span className="eyebrow mb-6">
+          Our 5-Stage Method
         </span>
 
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-20 text-left">
           <div className="max-w-3xl">
-            <h2 className="text-3xl md:text-5xl font-black tracking-tight text-text-primary leading-tight">
+            <h2 className="text-3xl md:text-5xl font-medium tracking-tight text-text-primary leading-tight">
               Predictable delivery. No endless science projects.
             </h2>
             <p className="text-base text-text-muted mt-4 font-normal">
@@ -68,7 +68,7 @@ export default function FiveStepMethod() {
           </div>
           <Link
             href="/method"
-            className="text-xs font-mono uppercase tracking-widest text-accent-steel hover:text-accent-steel-hover transition-steel flex items-center gap-1 shrink-0"
+            className="text-xs font-mono text-text-muted hover:text-text-primary transition-colors flex items-center gap-1 shrink-0"
             style={{ minHeight: '44px', display: 'inline-flex', alignItems: 'center' }}
           >
             Review Detailed Method Page <span className="text-sm">→</span>
@@ -80,21 +80,21 @@ export default function FiveStepMethod() {
           {METHOD_STAGES.map((s) => (
             <div
               key={s.step}
-              className="bg-bg-secondary border border-border-steel/20 p-8 sm:p-10 text-left transition-steel hover:border-accent-steel/50"
+              className="bg-bg-secondary rounded-2xl border border-border-color p-8 sm:p-10 text-left transition-all hover:border-white/20"
             >
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
                 
                 {/* Step Num & Name (4 cols) */}
                 <div className="lg:col-span-4 flex flex-col gap-2">
                   <div className="flex items-baseline gap-4">
-                    <span className="text-4xl sm:text-5xl font-black text-accent-steel font-mono">
+                    <span className="text-3xl sm:text-4xl font-medium text-text-primary font-mono">
                       {s.step}
                     </span>
-                    <h3 className="text-2xl font-black text-text-primary uppercase tracking-tight">
+                    <h3 className="text-xl sm:text-2xl font-semibold text-text-primary tracking-tight">
                       {s.name}
                     </h3>
                   </div>
-                  <div className="text-xs font-mono text-accent-gold mt-1">
+                  <div className="text-xs font-mono text-text-muted mt-1">
                     Typical Duration: {s.timeframe}
                   </div>
                   <p className="text-xs text-text-muted leading-relaxed mt-2 font-normal">

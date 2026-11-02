@@ -23,7 +23,7 @@ const config: Config = {
         'border-steel': 'var(--border-steel)',
       },
       fontFamily: {
-        sans: ['var(--font-inter)', 'sans-serif'],
+        sans: ['-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'Roboto', 'Helvetica', 'Arial', 'sans-serif'],
       },
     },
   },

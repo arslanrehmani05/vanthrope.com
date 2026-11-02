@@ -6,62 +6,57 @@ This document captures the complete visual and design system for Vanthrope. All 
 
 ## 1. Color Palette & Semantic Tokens
 
-All colors are defined as CSS variables in `app/globals.css` and mapped in `tailwind.config.ts`.
+All colors are defined as CSS variables in `app/globals.css` and mapped in `tailwind.config.ts`, directly synchronized with `arslanrehmani.com`:
 
 | Token | CSS Variable | Hex / RGBA Value | Usage & Meaning |
 | :--- | :--- | :--- | :--- |
-| `bg-primary` | `--bg-primary` | `#080808` | Primary page background, canvas root |
-| `bg-secondary` | `--bg-secondary` | `#0F0F0F` | Alternating section backgrounds, card containers |
-| `bg-surface` | `--bg-surface` | `#1A1A1A` | Elevated cards, input fields, modals |
-| `text-primary` | `--text-primary` | `#F0EEE8` | High-contrast off-white for primary headings, body text |
-| `text-muted` | `--text-muted` | `rgba(240, 238, 232, 0.5)` | 50% opacity body copy, descriptions, secondary text |
-| `text-subtle` | `--text-subtle` | `rgba(240, 238, 232, 0.3)` | 30% opacity footnotes, metadata, copyright, timestamps |
-| `accent-steel` | `--accent-steel` | `#8A9BA8` | Industrial steel blue for branding slashes `//`, badges, primary buttons, borders |
-| `accent-steel-hover` | `--accent-steel-hover` | `#9EADB9` | Hover state for steel elements |
-| `accent-gold` | `--accent-gold` | `#C9A84C` | Subtle warm ochre / gold accent for verified marks / status badges |
-| `border-color` | `--border` | `#1A1A1A` | Baseline structural divider (1px solid) |
-| `border-steel` | `--border-steel` | `rgba(138, 155, 168, 0.3)` | 30% steel border for emphasized cards, active inputs |
+| `bg-primary` | `--bg-primary` | `#111113` | Dark charcoal void background, canvas root |
+| `bg-secondary` | `--bg-secondary` | `hsla(0, 0%, 100%, 0.05)` | 5% surface container |
+| `bg-surface` | `--bg-surface` | `hsla(0, 0%, 100%, 0.08)` | 8% elevated card surface |
+| `text-primary` | `--text-primary` | `#f0f0f2` | Crisp off-white for primary headings, body text |
+| `text-muted` | `--text-muted` | `hsla(0, 0%, 100%, 0.55)` | 55% white body copy, descriptions, secondary text |
+| `text-subtle` | `--text-subtle` | `hsla(0, 0%, 100%, 0.35)` | 35% white footnotes, metadata, copyright, timestamps |
+| `border-color` | `--border` | `hsla(0, 0%, 100%, 0.08)` | Subtle structural divider (1px solid) |
+| `border-gold` | `--border-gold` | `hsla(0, 0%, 100%, 0.16)` | Subtle gold / highlight divider |
+| `accent-steel` | `--accent-steel` | `#f0f0f2` | Clean monochrome text accent matching primary text |
+| `accent-gold` | `--accent-gold` | `#C9A84C` | Subtle warm ochre / gold accent for verified status badges |
 
 ---
 
 ## 2. Typography
 
-* **Primary Font Family:** Inter (`var(--font-inter)`, `sans-serif`)
-* **OpenType Features Enabled:** `"cv02", "cv03", "cv04", "cv11"` (clean industrial geometric numbers and character alternates).
+* **Primary Font Stack:** Apple System (`-apple-system`, `BlinkMacSystemFont`, `"Segoe UI"`, `Roboto`, `Helvetica`, `Arial`, `sans-serif`)
+* **Styling Tone:** Refined sentence-case typography with Cupertino / Linear aesthetic.
 * **Hierarchy:**
-  * **Display / Hero H1:** `text-4xl sm:text-5xl md:text-6xl font-black tracking-tight leading-[1.1]`
-  * **Section H2:** `text-3xl md:text-5xl font-black tracking-tight leading-tight uppercase or sentence-cased`
-  * **Card / Subsection H3:** `text-lg sm:text-2xl font-black tracking-tight uppercase`
-  * **Section Category Eyebrows:** `text-xs font-bold tracking-widest uppercase text-accent-steel`
+  * **Display / Hero H1:** `text-4xl sm:text-6xl lg:text-7xl font-medium tracking-tight text-text-primary leading-[1.08]`
+  * **Section H2:** `text-3xl md:text-5xl font-medium tracking-tight text-text-primary leading-tight`
+  * **Card / Subsection H3:** `text-xl font-semibold tracking-tight text-text-primary`
+  * **Section Category Eyebrows:** `.eyebrow` (`text-xs font-medium tracking-[0.14em] uppercase text-text-subtle font-mono`)
   * **Body Copy:** `text-sm sm:text-base text-text-muted leading-relaxed font-normal`
-  * **Buttons / Tags / Navigation:** `text-xs font-semibold tracking-widest uppercase`
-  * **Fine Print / Footnotes / Micro-badges:** `text-[10px] uppercase tracking-wider font-semibold`
+  * **Buttons:** `.btn-primary` (`rounded-full px-7 py-3.5 text-sm font-semibold bg-text-primary text-bg-primary shadow-lg hover:-translate-y-0.5 transition-all`)
+  * **Fine Print / Footnotes:** `text-xs font-mono text-text-subtle`
 
 ---
 
 ## 3. Spacing, Layout & Touch Targets
 
 * **Max Content Width:** `max-w-7xl mx-auto px-6` (Centered content column)
-* **Section Padding:** `py-40 sm:py-44` on desktop, `py-24 sm:py-32` on mobile
+* **Section Padding:** `py-32 sm:py-40` on desktop, `py-20 sm:py-24` on mobile
 * **Section Separation:** `border-b border-border-color` between all full-width sections
-* **Grids:**
-  * 3-column capability / solution grid: `grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12`
-  * 2-column comparison / proof grid: `grid grid-cols-1 lg:grid-cols-2 gap-8`
-  * 2x2 process grid: `grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-20`
+* **Corner Radius:**
+  * `rounded-full`: Primary action buttons, tags, chips, status pills.
+  * `rounded-2xl`: Content cards, modal dialogs, case study panels.
+  * `rounded-xl`: Form inputs, textareas, dropdowns, code blocks.
 * **Accessibility Touch Targets:** Explicitly enforced `style={{ minHeight: '44px' }}` (or `minWidth: '44px'`) on every interactive element, link, and button.
 
 ---
 
 ## 4. Textures, Borders & Transitions
 
-* **Grid Texture (`.grid-bg`):**
-  * Subtle geometric 60x60px SVG grid at 3%–8% opacity (`stroke: #8A9BA8`, `opacity: 0.03 - 0.08`).
-* **Transitions (`.transition-steel`):**
-  * `all 0.2s cubic-bezier(0.4, 0, 0.2, 1)`
-* **Corner Radius:**
-  * `rounded-none` strictly applied across buttons, tags, and cards for an austere, institutional aesthetic.
+* **Radial Depth Canvas:**
+  * Dual radial gradient background (`ellipse 80% 60% at 50% 25% #1a1a2e to #111113`, plus subtle depth circles at 15% and 85%).
 * **Brand Signature:**
-  * Steel double-slash logo mark: `<span className="text-accent-steel font-black text-xl mr-2">{"//"}</span>`
+  * Sibling 'V' Squircle Monogram Vector (`components/brand-logo.tsx`), mathematically inverted sibling to Arslan Rehmani's 'A' mark.
 
 ---
 

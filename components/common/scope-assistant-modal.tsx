@@ -41,17 +41,17 @@ export default function ScopeAssistantModal() {
       {/* Floating launcher button */}
       <button
         onClick={() => setIsOpen(true)}
-        className="fixed bottom-6 right-6 z-40 bg-bg-surface border border-accent-steel/50 hover:border-accent-steel text-text-primary px-4 py-3 shadow-2xl flex items-center gap-2 text-xs font-mono tracking-widest uppercase transition-steel group"
+        className="fixed bottom-6 right-6 z-40 bg-bg-surface/90 backdrop-blur-md border border-border-color hover:border-white/20 text-text-primary px-5 py-3 rounded-full shadow-2xl flex items-center gap-2 text-xs font-medium transition-all group"
         style={{ minHeight: '44px' }}
       >
-        <Sparkles className="w-4 h-4 text-accent-steel group-hover:rotate-12 transition-steel" />
+        <Sparkles className="w-4 h-4 text-text-primary group-hover:rotate-12 transition-transform" />
         <span>Scope My Project</span>
       </button>
 
       {/* Modal Overlay */}
       {isOpen && (
         <div className="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
-          <div className="bg-bg-primary border border-border-steel/40 w-full max-w-2xl max-h-[90vh] overflow-y-auto p-6 md:p-8 text-left shadow-2xl">
+          <div className="bg-bg-primary rounded-2xl border border-border-color w-full max-w-2xl max-h-[90vh] overflow-y-auto p-6 md:p-8 text-left shadow-2xl">
             
             {/* Header */}
             <div className="flex items-center justify-between pb-4 border-b border-border-color mb-6">
@@ -134,8 +134,8 @@ export default function ScopeAssistantModal() {
                   <button
                     onClick={handleGenerate}
                     disabled={!formData.workflowName || !formData.currentFriction || loading}
-                    className="bg-accent-steel hover:bg-accent-steel-hover text-bg-primary px-6 py-3 font-bold uppercase tracking-widest text-xs transition-steel disabled:opacity-50"
-                    style={{ minHeight: '44px' }}
+                    className="btn-primary !px-6 !py-2.5 font-semibold rounded-full text-xs shadow-md disabled:opacity-50"
+                    style={{ minHeight: '40px' }}
                   >
                     {loading ? 'Synthesizing Brief...' : 'Generate 1-Page Brief'}
                   </button>
@@ -144,12 +144,12 @@ export default function ScopeAssistantModal() {
             ) : (
               /* Step 2: Generated Brief Output */
               <div className="space-y-6 font-mono text-xs">
-                <div className="p-4 bg-bg-secondary border border-accent-gold/40 text-[11px] text-accent-gold">
+                <div className="p-4 bg-bg-secondary rounded-xl border border-accent-gold/40 text-[11px] text-accent-gold">
                   {brief?.disclosure}
                 </div>
 
-                <div className="p-6 bg-bg-surface border border-border-color space-y-4 text-text-primary">
-                  <div className="text-base font-bold uppercase text-accent-steel">
+                <div className="p-6 bg-bg-surface rounded-xl border border-border-color space-y-4 text-text-primary">
+                  <div className="text-base font-semibold text-text-primary">
                     {brief?.projectTitle}
                   </div>
                   <div>
@@ -183,8 +183,8 @@ export default function ScopeAssistantModal() {
                   </button>
                   <a
                     href="/contact"
-                    className="bg-accent-steel text-bg-primary px-6 py-3 font-bold uppercase tracking-widest text-xs hover:bg-accent-steel-hover transition-steel"
-                    style={{ minHeight: '44px', display: 'inline-flex', alignItems: 'center' }}
+                    className="btn-primary !px-6 !py-2.5 font-semibold rounded-full text-xs shadow-md"
+                    style={{ minHeight: '40px', display: 'inline-flex', alignItems: 'center' }}
                   >
                     Book Call to Review Brief
                   </a>

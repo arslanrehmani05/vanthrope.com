@@ -32,13 +32,13 @@ export default function TrustTeaser() {
     <section className="bg-bg-secondary py-32 sm:py-40 border-b border-border-color">
       <div className="max-w-7xl mx-auto px-6">
         
-        <span className="text-xs font-bold tracking-widest uppercase text-accent-steel mb-6 block">
-          CHECKABLE CLAIMS
+        <span className="eyebrow mb-6">
+          Checkable Claims
         </span>
 
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-20 text-left">
           <div className="max-w-3xl">
-            <h2 className="text-3xl md:text-5xl font-black tracking-tight text-text-primary leading-tight">
+            <h2 className="text-3xl md:text-5xl font-medium tracking-tight text-text-primary leading-tight">
               Safety you can verify. Not marketing promises.
             </h2>
             <p className="text-base text-text-muted mt-4 font-normal">
@@ -47,10 +47,10 @@ export default function TrustTeaser() {
           </div>
           <Link
             href="/security"
-            className="text-xs font-mono uppercase tracking-widest text-accent-steel hover:text-accent-steel-hover transition-steel flex items-center gap-1 shrink-0"
+            className="text-xs font-mono text-text-muted hover:text-text-primary transition-colors flex items-center gap-1 shrink-0"
             style={{ minHeight: '44px', display: 'inline-flex', alignItems: 'center' }}
           >
-            Review Security & Governance Pack <span className="text-sm">→</span>
+            Review Security &amp; Governance Pack <span className="text-sm">→</span>
           </Link>
         </div>
 
@@ -59,11 +59,11 @@ export default function TrustTeaser() {
           {claims.map((c, idx) => (
             <div
               key={idx}
-              className="bg-bg-primary border border-border-steel/20 p-8 flex flex-col justify-between text-left"
+              className="bg-bg-primary rounded-2xl border border-border-color p-8 flex flex-col justify-between text-left transition-all hover:border-white/20"
             >
               <div>
                 <TruthBadge evidenceId={c.evidence.id} className="mb-4" />
-                <h3 className="text-xl font-bold tracking-tight text-text-primary uppercase mb-4">
+                <h3 className="text-xl font-semibold tracking-tight text-text-primary mb-3">
                   {c.title}
                 </h3>
                 <p className="text-sm text-text-muted leading-relaxed font-normal mb-6">
@@ -71,7 +71,7 @@ export default function TrustTeaser() {
                 </p>
               </div>
 
-              <div className="pt-4 border-t border-border-color text-xs font-mono text-accent-steel/80">
+              <div className="pt-4 border-t border-border-color text-xs font-mono text-text-muted">
                 {c.check}
               </div>
             </div>

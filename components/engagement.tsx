@@ -102,7 +102,7 @@ export default function Engagement() {
             <form onSubmit={handleSubmit} className="flex flex-col gap-8 text-left">
               {/* Name Field */}
               <div className="flex flex-col">
-                <label htmlFor="form-name" className="text-[10px] font-bold uppercase tracking-widest text-accent-steel mb-2">
+                <label htmlFor="form-name" className="text-xs font-mono uppercase tracking-wider text-text-muted mb-2">
                   Full Name
                 </label>
                 <input
@@ -112,7 +112,7 @@ export default function Engagement() {
                   value={formData.name}
                   onChange={handleChange}
                   placeholder="John Doe"
-                  className="w-full bg-bg-primary border border-border-steel/20 text-text-primary text-sm px-5 py-4 rounded-none focus:outline-none focus:border-accent-steel transition-steel"
+                  className="w-full bg-bg-primary border border-border-color text-text-primary text-sm px-5 py-3.5 rounded-xl focus:outline-none focus:border-white/40 transition-colors"
                   style={{ minHeight: '44px' }}
                   required
                   disabled={status === 'loading'}
@@ -121,7 +121,7 @@ export default function Engagement() {
 
               {/* Company Field */}
               <div className="flex flex-col">
-                <label htmlFor="form-company" className="text-[10px] font-bold uppercase tracking-widest text-accent-steel mb-2">
+                <label htmlFor="form-company" className="text-xs font-mono uppercase tracking-wider text-text-muted mb-2">
                   Company Name
                 </label>
                 <input
@@ -131,7 +131,7 @@ export default function Engagement() {
                   value={formData.company}
                   onChange={handleChange}
                   placeholder="Enterprise Corp"
-                  className="w-full bg-bg-primary border border-border-steel/20 text-text-primary text-sm px-5 py-4 rounded-none focus:outline-none focus:border-accent-steel transition-steel"
+                  className="w-full bg-bg-primary border border-border-color text-text-primary text-sm px-5 py-3.5 rounded-xl focus:outline-none focus:border-white/40 transition-colors"
                   style={{ minHeight: '44px' }}
                   required
                   disabled={status === 'loading'}
@@ -140,7 +140,7 @@ export default function Engagement() {
 
               {/* Annual Revenue Dropdown */}
               <div className="flex flex-col">
-                <label htmlFor="form-revenue" className="text-[10px] font-bold uppercase tracking-widest text-accent-steel mb-2">
+                <label htmlFor="form-revenue" className="text-xs font-mono uppercase tracking-wider text-text-muted mb-2">
                   Annual Revenue
                 </label>
                 <select
@@ -148,7 +148,7 @@ export default function Engagement() {
                   name="revenueRange"
                   value={formData.revenueRange}
                   onChange={handleChange}
-                  className="w-full bg-bg-primary border border-border-steel/20 text-text-primary text-sm px-5 py-4 rounded-none focus:outline-none focus:border-accent-steel transition-steel"
+                  className="w-full bg-bg-primary border border-border-color text-text-primary text-sm px-5 py-3.5 rounded-xl focus:outline-none focus:border-white/40 transition-colors"
                   style={{ minHeight: '44px' }}
                   required
                   disabled={status === 'loading'}
@@ -164,7 +164,7 @@ export default function Engagement() {
 
               {/* Operational Problem Textarea */}
               <div className="flex flex-col">
-                <label htmlFor="form-problem" className="text-[10px] font-bold uppercase tracking-widest text-accent-steel mb-2">
+                <label htmlFor="form-problem" className="text-xs font-mono uppercase tracking-wider text-text-muted mb-2">
                   What manual operational bottleneck needs replacing?
                 </label>
                 <textarea
@@ -173,7 +173,7 @@ export default function Engagement() {
                   value={formData.problem}
                   onChange={handleChange}
                   placeholder="Describe your current manual reporting, reconciliation, scheduling, or data entry procedures in detail..."
-                  className="w-full bg-bg-primary border border-border-steel/20 text-text-primary text-sm px-5 py-4 rounded-none h-40 focus:outline-none focus:border-accent-steel transition-steel resize-none"
+                  className="w-full bg-bg-primary border border-border-color text-text-primary text-sm px-5 py-3.5 rounded-xl h-40 focus:outline-none focus:border-white/40 transition-colors resize-none"
                   required
                   disabled={status === 'loading'}
                 />
@@ -181,7 +181,7 @@ export default function Engagement() {
 
               {/* Error Message */}
               {status === 'error' && (
-                <div className="text-red-500 text-xs font-bold uppercase tracking-widest">
+                <div className="text-red-400 text-xs font-mono">
                   ✕ {errorMessage}
                 </div>
               )}
@@ -191,7 +191,7 @@ export default function Engagement() {
                 <button
                   type="submit"
                   disabled={status === 'loading'}
-                  className="bg-accent-steel hover:bg-accent-steel-hover text-bg-primary font-black text-xs tracking-widest uppercase px-8 py-4 rounded-none transition-steel disabled:opacity-50"
+                  className="btn-primary w-full rounded-full !py-3.5 text-sm font-semibold disabled:opacity-50"
                   style={{ minHeight: '44px', width: '100%' }}
                 >
                   {status === 'loading' ? 'Submitting Application...' : 'Apply for consultation'}

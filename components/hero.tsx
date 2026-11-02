@@ -19,20 +19,20 @@ export default function Hero() {
       <div className="relative z-10 max-w-7xl mx-auto px-6 pt-16 sm:pt-20 flex flex-col items-center text-center">
         
         {/* Headline A/B Testing Switcher */}
-        <div className="mb-6 flex items-center gap-2 bg-bg-secondary p-1 border border-border-color text-[10px] font-mono">
-          <span className="text-text-subtle px-2">Headline Option:</span>
+        <div className="mb-8 flex items-center gap-1.5 bg-bg-secondary p-1 rounded-full border border-border-color text-xs font-mono">
+          <span className="text-text-subtle px-2">Headline:</span>
           <button
             onClick={() => setHeadlineOption('A')}
-            className={`px-2 py-0.5 transition-steel ${
-              headlineOption === 'A' ? 'bg-accent-steel text-bg-primary font-bold' : 'text-text-muted hover:text-text-primary'
+            className={`px-3 py-1 rounded-full transition-all ${
+              headlineOption === 'A' ? 'bg-text-primary text-bg-primary font-semibold' : 'text-text-muted hover:text-text-primary'
             }`}
           >
             A: Outcome
           </button>
           <button
             onClick={() => setHeadlineOption('B')}
-            className={`px-2 py-0.5 transition-steel ${
-              headlineOption === 'B' ? 'bg-accent-steel text-bg-primary font-bold' : 'text-text-muted hover:text-text-primary'
+            className={`px-3 py-1 rounded-full transition-all ${
+              headlineOption === 'B' ? 'bg-text-primary text-bg-primary font-semibold' : 'text-text-muted hover:text-text-primary'
             }`}
           >
             B: Reliability
@@ -40,7 +40,7 @@ export default function Hero() {
         </div>
 
         {/* Outcome Headline */}
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-black tracking-tight text-text-primary leading-[1.1] max-w-4xl uppercase">
+        <h1 className="text-4xl sm:text-6xl lg:text-7xl font-medium tracking-tight text-text-primary leading-[1.08] max-w-4xl">
           {headlineOption === 'A' ? (
             <>Get your Mondays back with systems that run the unglamorous work.</>
           ) : (
@@ -54,27 +54,24 @@ export default function Hero() {
         </p>
 
         {/* Action CTAs */}
-        <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
+        <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
           <Link
             href="/contact"
-            className="bg-accent-steel hover:bg-accent-steel-hover text-bg-primary font-bold text-xs tracking-widest uppercase px-8 py-4 rounded-none transition-steel"
-            style={{ minHeight: '44px', display: 'inline-flex', alignItems: 'center' }}
+            className="btn-primary !px-7 !py-3.5 !text-sm font-semibold rounded-full shadow-lg hover:-translate-y-0.5 transition-all"
           >
-            Book a 20-minute discovery call
-          </Link>
-          <Link
-            href="/tools"
-            className="border border-border-steel text-text-primary hover:border-accent-steel text-xs font-semibold tracking-widest uppercase px-6 py-4 rounded-none transition-steel"
-            style={{ minHeight: '44px', display: 'inline-flex', alignItems: 'center' }}
-          >
-            Try a tool
+            Book 20-min Discovery Call
           </Link>
           <Link
             href="/work"
-            className="text-text-muted hover:text-text-primary text-xs font-semibold tracking-widest uppercase px-4 py-4 transition-steel"
-            style={{ minHeight: '44px', display: 'inline-flex', alignItems: 'center' }}
+            className="inline-flex items-center justify-center rounded-full px-7 py-3.5 text-sm font-medium border border-border-color text-text-primary hover:bg-bg-surface transition-all"
           >
-            See the work <span className="ml-1 text-accent-steel">→</span>
+            Explore Case Studies
+          </Link>
+          <Link
+            href="/tools"
+            className="inline-flex items-center justify-center rounded-full px-5 py-3.5 text-sm font-medium text-text-muted hover:text-text-primary transition-all"
+          >
+            Try a tool &rarr;
           </Link>
         </div>
 

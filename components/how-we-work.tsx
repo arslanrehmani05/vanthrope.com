@@ -27,13 +27,13 @@ export default function HowWeWork() {
       <div className="max-w-7xl mx-auto px-6">
         
         {/* Section Label */}
-        <span className="text-xs font-bold tracking-widest uppercase text-accent-steel mb-8 block">
-          HOW WE WORK
+        <span className="eyebrow mb-8 block">
+          How We Work
         </span>
 
         {/* Section Header */}
         <div className="flex flex-col gap-6 mb-20 text-left max-w-4xl">
-          <h2 className="text-3xl md:text-5xl font-black tracking-tight text-text-primary leading-tight">
+          <h2 className="text-3xl md:text-5xl font-medium tracking-tight text-text-primary leading-tight">
             A small number of clients. An unreasonable standard of delivery.
           </h2>
         </div>
@@ -43,15 +43,15 @@ export default function HowWeWork() {
           {steps.map((step, idx) => (
             <div key={idx} className="flex flex-col sm:flex-row gap-6 items-start text-left">
               {/* Number */}
-              <div className="text-5xl sm:text-6xl font-black text-accent-steel leading-none select-none">
+              <div className="text-4xl sm:text-5xl font-medium text-text-primary/40 font-mono leading-none select-none">
                 {step.num}
               </div>
               {/* Content */}
               <div className="flex flex-col gap-2">
-                <h3 className="text-lg font-bold tracking-tight text-text-primary uppercase">
+                <h3 className="text-lg font-semibold tracking-tight text-text-primary">
                   {step.title}
                 </h3>
-                <p className="text-sm text-text-muted leading-relaxed">
+                <p className="text-sm text-text-muted leading-relaxed font-normal">
                   {step.description}
                 </p>
               </div>

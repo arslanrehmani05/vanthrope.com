@@ -7,13 +7,13 @@ export default function FeaturedWork() {
     <section id="work" className="bg-bg-primary py-32 sm:py-40 border-b border-border-color">
       <div className="max-w-7xl mx-auto px-6">
         
-        <span className="text-xs font-bold tracking-widest uppercase text-accent-steel mb-6 block">
-          FEATURED WORK
+        <span className="eyebrow mb-6">
+          Featured Work
         </span>
 
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-20 text-left">
           <div className="max-w-3xl">
-            <h2 className="text-3xl md:text-5xl font-black tracking-tight text-text-primary leading-tight">
+            <h2 className="text-3xl md:text-5xl font-medium tracking-tight text-text-primary leading-tight">
               Real systems running in production.
             </h2>
             <p className="text-base text-text-muted mt-4 font-normal">
@@ -22,7 +22,7 @@ export default function FeaturedWork() {
           </div>
           <Link
             href="/work"
-            className="text-xs font-mono uppercase tracking-widest text-accent-steel hover:text-accent-steel-hover transition-steel flex items-center gap-1 shrink-0"
+            className="text-xs font-mono text-text-muted hover:text-text-primary transition-colors flex items-center gap-1 shrink-0"
             style={{ minHeight: '44px', display: 'inline-flex', alignItems: 'center' }}
           >
             Explore all case studies <span className="text-sm">→</span>
@@ -34,7 +34,7 @@ export default function FeaturedWork() {
           {SEED_CASE_STUDIES.map((cs) => (
             <div
               key={cs.slug}
-              className="bg-bg-secondary border border-border-steel/20 p-8 flex flex-col justify-between text-left transition-steel hover:border-accent-steel/50"
+              className="bg-bg-secondary rounded-2xl border border-border-color p-8 flex flex-col justify-between text-left transition-all hover:border-white/20"
             >
               <div>
                 <TruthBadge
@@ -44,7 +44,7 @@ export default function FeaturedWork() {
                   className="mb-4"
                 />
                 
-                <h3 className="text-xl font-black text-text-primary uppercase tracking-tight mb-3">
+                <h3 className="text-xl font-semibold text-text-primary tracking-tight mb-3">
                   {cs.title}
                 </h3>
                 
@@ -56,7 +56,7 @@ export default function FeaturedWork() {
                 <div className="space-y-3 pt-4 border-t border-border-color mb-6">
                   {cs.results.map((res, rIdx) => (
                     <div key={rIdx} className="flex flex-col">
-                      <span className="text-lg font-black text-text-primary font-mono">
+                      <span className="text-lg font-semibold text-text-primary font-mono">
                         {res.measure}
                       </span>
                       <span className="text-[11px] text-text-subtle font-mono">
@@ -71,7 +71,7 @@ export default function FeaturedWork() {
               <div className="pt-4 border-t border-border-color">
                 <Link
                   href={`/work/${cs.slug}`}
-                  className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-accent-steel hover:text-accent-steel-hover transition-steel"
+                  className="inline-flex items-center gap-2 text-xs font-medium text-text-primary hover:text-text-muted transition-colors"
                   style={{ minHeight: '44px' }}
                 >
                   Read Architecture Blueprint <span className="text-sm">→</span>

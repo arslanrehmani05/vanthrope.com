@@ -83,13 +83,13 @@ export default function SolutionsGrid() {
     <section id="solutions" className="bg-bg-secondary py-32 sm:py-40 border-b border-border-color">
       <div className="max-w-7xl mx-auto px-6">
         
-        <span className="text-xs font-bold tracking-widest uppercase text-accent-steel mb-6 block">
-          SOLUTIONS BY PROBLEM
+        <span className="eyebrow mb-6">
+          Solutions by Problem
         </span>
 
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-16 text-left">
           <div className="max-w-3xl">
-            <h2 className="text-3xl md:text-5xl font-black tracking-tight text-text-primary leading-tight">
+            <h2 className="text-3xl md:text-5xl font-medium tracking-tight text-text-primary leading-tight">
               We fix the specific friction slowing your business down.
             </h2>
             <p className="text-base text-text-muted mt-4 font-normal">
@@ -98,7 +98,7 @@ export default function SolutionsGrid() {
           </div>
           <Link
             href="/solutions"
-            className="text-xs font-mono uppercase tracking-widest text-accent-steel hover:text-accent-steel-hover transition-steel flex items-center gap-1 shrink-0"
+            className="text-xs font-mono text-text-muted hover:text-text-primary transition-colors flex items-center gap-1 shrink-0"
             style={{ minHeight: '44px', display: 'inline-flex', alignItems: 'center' }}
           >
             View all 8 operational solutions <span className="text-sm">→</span>
@@ -113,24 +113,24 @@ export default function SolutionsGrid() {
               <Link
                 key={sol.slug}
                 href={`/solutions/${sol.slug}`}
-                className="group bg-bg-primary border border-border-color hover:border-accent-steel p-6 flex flex-col justify-between transition-steel text-left"
+                className="group bg-bg-primary rounded-2xl border border-border-color hover:border-white/20 p-6 flex flex-col justify-between transition-all text-left"
                 style={{ minHeight: '300px' }}
               >
                 <div>
                   <div className="flex items-center justify-between mb-4">
-                    <Icon className="w-6 h-6 text-accent-steel group-hover:scale-110 transition-steel" />
+                    <Icon className="w-6 h-6 text-text-muted group-hover:text-text-primary group-hover:scale-105 transition-all" />
                     <TruthBadge maturity={sol.maturity} />
                   </div>
-                  <h3 className="text-base font-bold text-text-primary uppercase tracking-tight mb-3 group-hover:text-accent-steel transition-steel">
+                  <h3 className="text-base font-semibold text-text-primary tracking-tight mb-3 group-hover:text-text-primary transition-colors">
                     {sol.title}
                   </h3>
-                  <p className="text-xs text-text-muted leading-relaxed mb-4">
+                  <p className="text-xs text-text-muted leading-relaxed mb-4 font-normal">
                     {sol.problem}
                   </p>
                 </div>
 
-                <div className="pt-4 border-t border-border-color text-[11px] text-text-subtle group-hover:text-text-primary transition-steel flex items-center justify-between">
-                  <span>Explore Architecture</span>
+                <div className="pt-4 border-t border-border-color text-xs text-text-muted group-hover:text-text-primary transition-colors flex items-center justify-between">
+                  <span>Explore Blueprint</span>
                   <span>→</span>
                 </div>
               </Link>

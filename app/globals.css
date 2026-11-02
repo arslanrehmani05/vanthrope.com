@@ -11,10 +11,10 @@
   --text-subtle: hsla(0, 0%, 100%, 0.35);
   --border: hsla(0, 0%, 100%, 0.08);
   --border-gold: hsla(0, 0%, 100%, 0.16);
-  --accent-steel: #8A9BA8;
-  --accent-steel-hover: #9EADB9;
+  --accent-steel: #f0f0f2;
+  --accent-steel-hover: #ffffff;
   --accent-gold: #C9A84C;
-  --border-steel: rgba(138, 155, 168, 0.3);
+  --border-steel: hsla(0, 0%, 100%, 0.12);
 }
 
 body {

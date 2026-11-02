@@ -19,22 +19,22 @@ export default function WhatWeAreNot() {
       <div className="max-w-7xl mx-auto px-6">
         
         {/* Section Label */}
-        <span className="text-xs font-bold tracking-widest uppercase text-accent-steel mb-20 block">
-          WHAT WE ARE NOT
+        <span className="eyebrow mb-16 block">
+          What We Are Not
         </span>
 
         {/* Three Columns Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-16">
           {columns.map((col, idx) => (
             <div key={idx} className="flex flex-col items-start text-left">
-              {/* Large X character in steel color */}
-              <div className="text-5xl font-black text-accent-steel mb-8 select-none">
+              {/* Large X character */}
+              <div className="text-4xl font-light text-text-subtle mb-6 select-none">
                 &times;
               </div>
-              <h3 className="text-xl font-bold tracking-tight text-text-primary mb-4 uppercase">
+              <h3 className="text-xl font-semibold tracking-tight text-text-primary mb-3">
                 {col.title}
               </h3>
-              <p className="text-sm text-text-muted leading-relaxed">
+              <p className="text-sm text-text-muted leading-relaxed font-normal">
                 {col.description}
               </p>
             </div>

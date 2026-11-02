@@ -27,13 +27,13 @@ export default function Proof() {
       <div className="max-w-7xl mx-auto px-6">
         
         {/* Section Label */}
-        <span className="text-xs font-bold tracking-widest uppercase text-accent-steel mb-8 block">
-          OPERATIONAL RESULTS
+        <span className="eyebrow mb-8 block">
+          Operational Results
         </span>
 
         {/* Section Header */}
         <div className="flex flex-col gap-6 mb-20 text-left max-w-4xl">
-          <h2 className="text-3xl md:text-5xl font-black tracking-tight text-text-primary leading-tight">
+          <h2 className="text-3xl md:text-5xl font-medium tracking-tight text-text-primary leading-tight">
             Systems deployed. Results measured.
           </h2>
         </div>
@@ -43,30 +43,30 @@ export default function Proof() {
           {caseStudies.map((cs, idx) => (
             <div
               key={idx}
-              className="bg-bg-secondary border border-border-steel/20 p-8 md:p-12 flex flex-col justify-between min-h-[420px] text-left"
+              className="bg-bg-secondary rounded-2xl border border-border-color p-8 md:p-12 flex flex-col justify-between min-h-[420px] text-left transition-all hover:border-white/20"
             >
               <div>
                 {/* Industry Tag */}
-                <div className="inline-block border border-accent-steel/40 text-accent-steel text-[10px] font-bold tracking-widest uppercase px-3 py-1 mb-6">
+                <div className="inline-block rounded-full border border-border-color text-text-muted text-[11px] font-mono tracking-wider px-3 py-1 mb-6">
                   {cs.industry}
                 </div>
                 
-                <h3 className="text-2xl font-black text-text-primary tracking-tight mb-4 uppercase">
+                <h3 className="text-2xl font-semibold text-text-primary tracking-tight mb-4">
                   {cs.title}
                 </h3>
                 
-                <p className="text-sm text-text-muted leading-relaxed mb-8">
+                <p className="text-sm text-text-muted leading-relaxed mb-8 font-normal">
                   {cs.problem}
                 </p>
 
                 {/* Metrics Row */}
-                <div className="grid grid-cols-2 gap-6 pt-6 border-t border-border-steel/10">
+                <div className="grid grid-cols-2 gap-6 pt-6 border-t border-border-color">
                   {cs.results.map((res, rIdx) => (
                     <div key={rIdx} className="flex flex-col">
-                      <span className="text-2xl sm:text-3xl font-black text-text-primary tracking-tight">
+                      <span className="text-2xl sm:text-3xl font-semibold text-text-primary tracking-tight">
                         {res.value}
                       </span>
-                      <span className="text-xs text-text-muted mt-1 font-medium">
+                      <span className="text-xs text-text-muted mt-1 font-normal">
                         {res.label}
                       </span>
                     </div>
@@ -78,7 +78,7 @@ export default function Proof() {
               <div className="mt-10 pt-4">
                 <a
                   href="#engagement"
-                  className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-accent-steel hover:text-accent-steel-hover transition-steel"
+                  className="inline-flex items-center gap-2 text-xs font-medium text-text-primary hover:text-text-muted transition-colors"
                   style={{ minHeight: '44px' }}
                 >
                   Request Architecture Blueprint <span className="text-sm">→</span>

@@ -31,16 +31,16 @@ export default function VerifiedProofStrip() {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-wrap items-center justify-between gap-4 mb-8">
           <div>
-            <span className="text-[10px] font-bold uppercase tracking-widest text-accent-steel block mb-1">
-              TRUTH GATE VERIFIED
+            <span className="eyebrow mb-1">
+              Truth Gate Verified
             </span>
-            <h2 className="text-xl md:text-2xl font-black text-text-primary tracking-tight uppercase">
+            <h2 className="text-xl md:text-2xl font-medium text-text-primary tracking-tight">
               Proven Operational Outcomes
             </h2>
           </div>
           <Link
             href="/proof-ledger"
-            className="text-xs font-mono text-accent-steel hover:text-accent-steel-hover transition-steel flex items-center gap-1.5"
+            className="text-xs font-mono text-text-muted hover:text-text-primary transition-colors flex items-center gap-1.5"
             style={{ minHeight: '44px', display: 'inline-flex', alignItems: 'center' }}
           >
             Inspect Evidence Registry <span className="text-sm">→</span>
@@ -52,7 +52,7 @@ export default function VerifiedProofStrip() {
           {metrics.map((item, idx) => (
             <div
               key={idx}
-              className="bg-bg-secondary p-6 border border-border-steel/20 flex flex-col justify-between text-left"
+              className="bg-bg-secondary p-6 rounded-2xl border border-border-color flex flex-col justify-between text-left transition-all hover:border-white/20"
             >
               <div>
                 <TruthBadge
@@ -61,7 +61,7 @@ export default function VerifiedProofStrip() {
                   evidenceId={item.evidence.id}
                   className="mb-3"
                 />
-                <div className="text-2xl lg:text-3xl font-black text-text-primary tracking-tight mt-2">
+                <div className="text-2xl lg:text-3xl font-semibold text-text-primary tracking-tight mt-2">
                   {item.headline}
                 </div>
                 <div className="text-xs text-text-muted mt-1.5 leading-relaxed font-normal">
