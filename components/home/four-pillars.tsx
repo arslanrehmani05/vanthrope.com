@@ -4,10 +4,10 @@ export default function FourPillars() {
   const pillars = [
     {
       num: '01',
-      title: 'Fits How You Actually Work',
-      subtitle: 'Discovery before design',
-      description: 'We do not ask you to bend your operations around someone else’s software mold. We spend time observing current spreadsheets, exceptions, and team handoffs before drafting architecture.',
-      benefit: 'Zero disruption to running production lines during rollout.'
+      title: 'Operational Topography First',
+      subtitle: 'Rigorous current-state discovery',
+      description: 'Enterprise ERPs fail when they force rigid vendor schemas onto complex shop-floor realities. We map existing transaction lifecycles, staff exceptions, and physical handoffs before specifying database schemas.',
+      benefit: 'Zero disruption to active production lines during migration.'
     },
     {
       num: '02',

@@ -20,14 +20,14 @@ export default function MethodPage() {
         {/* Header */}
         <section className="bg-bg-primary py-24 sm:py-32 border-b border-border-color">
           <div className="max-w-7xl mx-auto px-6 text-left">
-            <span className="text-xs font-bold tracking-widest uppercase text-accent-steel mb-6 block">
-              ENGINEERING PROTOCOL
+            <span className="eyebrow mb-6">
+              Engineering Protocol
             </span>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-black tracking-tight text-text-primary uppercase leading-tight max-w-4xl mb-6">
-              How we take a messy workflow to production.
+            <h1 className="text-4xl sm:text-6xl lg:text-7xl font-medium tracking-tight text-text-primary leading-[1.08] max-w-4xl mb-6">
+              Deterministic engineering from diagnostic audit to production.
             </h1>
             <p className="text-base sm:text-lg text-text-muted font-normal max-w-3xl leading-relaxed">
-              We do not believe in open-ended R&D or vague sprints. Every stage in our delivery protocol has written outputs, agreed acceptance criteria, and honest disclosures of what causes failure.
+              Every engagement follows a milestone-gated deployment lifecycle. Defined deliverables, formal acceptance criteria, explicit parallel-run testing, and full technical ownership transferred upon completion.
             </p>
           </div>
         </section>
@@ -38,31 +38,31 @@ export default function MethodPage() {
         {/* Operational Guarantees Section */}
         <section className="bg-bg-secondary py-24 sm:py-32 border-b border-border-color">
           <div className="max-w-7xl mx-auto px-6 text-left">
-            <span className="text-xs font-bold tracking-widest uppercase text-accent-steel mb-4 block">
-              DELIVERY INTEGRITY
+            <span className="eyebrow mb-4 block">
+              Delivery Integrity
             </span>
-            <h2 className="text-2xl sm:text-3xl font-black text-text-primary uppercase tracking-tight mb-8">
+            <h2 className="text-2xl sm:text-4xl font-medium text-text-primary tracking-tight mb-8">
               Rules of our delivery engagement
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="p-6 bg-bg-primary border border-border-color space-y-3">
-                <span className="text-xs font-mono font-bold text-accent-steel uppercase">
+              <div className="p-6 bg-bg-primary border border-border-color rounded-2xl space-y-3">
+                <span className="text-xs font-mono font-medium text-text-primary uppercase">
                   1. Weekly Working Code
                 </span>
                 <p className="text-xs text-text-muted leading-relaxed font-normal">
                   You never wait 8 weeks to see progress. We demo clickable, working code in staging environments every single week.
                 </p>
               </div>
-              <div className="p-6 bg-bg-primary border border-border-color space-y-3">
-                <span className="text-xs font-mono font-bold text-accent-steel uppercase">
+              <div className="p-6 bg-bg-primary border border-border-color rounded-2xl space-y-3">
+                <span className="text-xs font-mono font-medium text-text-primary uppercase">
                   2. Acceptance-Gated Milestones
                 </span>
                 <p className="text-xs text-text-muted leading-relaxed font-normal">
                   Invoices are tied to testable functional milestones agreed in writing before contract execution.
                 </p>
               </div>
-              <div className="p-6 bg-bg-primary border border-border-color space-y-3">
-                <span className="text-xs font-mono font-bold text-accent-steel uppercase">
+              <div className="p-6 bg-bg-primary border border-border-color rounded-2xl space-y-3">
+                <span className="text-xs font-mono font-medium text-text-primary uppercase">
                   3. Client Account Deployment
                 </span>
                 <p className="text-xs text-text-muted leading-relaxed font-normal">

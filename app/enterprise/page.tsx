@@ -31,10 +31,10 @@ export default function EnterprisePackPage() {
         {/* Header */}
         <section className="bg-bg-primary py-24 sm:py-32 border-b border-border-color">
           <div className="max-w-7xl mx-auto px-6 text-left">
-            <span className="text-xs font-bold tracking-widest uppercase text-accent-steel mb-6 block">
-              DUE DILIGENCE & GOVERNANCE
+            <span className="eyebrow mb-6">
+              Due Diligence &amp; Governance
             </span>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-black tracking-tight text-text-primary uppercase leading-tight max-w-4xl mb-6">
+            <h1 className="text-4xl sm:text-6xl lg:text-7xl font-medium tracking-tight text-text-primary leading-[1.08] max-w-4xl mb-6">
               Enterprise Governance Pack.
             </h1>
             <p className="text-base sm:text-lg text-text-muted font-normal max-w-3xl leading-relaxed">
@@ -46,11 +46,11 @@ export default function EnterprisePackPage() {
         {/* Downloadable Documents */}
         <section className="bg-bg-secondary py-20 sm:py-28 border-b border-border-color">
           <div className="max-w-7xl mx-auto px-6 text-left">
-            <span className="text-xs font-bold tracking-widest uppercase text-accent-steel mb-4 block">
-              GOVERNANCE ASSETS
+            <span className="eyebrow mb-4 block">
+              Governance Assets
             </span>
-            <h2 className="text-2xl sm:text-3xl font-black text-text-primary uppercase tracking-tight mb-8">
-              Standard legal & architecture packs
+            <h2 className="text-2xl sm:text-4xl font-medium text-text-primary tracking-tight mb-8">
+              Standard legal &amp; architecture packs
             </h2>
             <EnterpriseCards documents={documents} />
           </div>
@@ -59,15 +59,15 @@ export default function EnterprisePackPage() {
         {/* Security Questionnaire Summary Answers */}
         <section className="bg-bg-primary py-20 sm:py-28 border-b border-border-color">
           <div className="max-w-7xl mx-auto px-6 text-left">
-            <span className="text-xs font-bold tracking-widest uppercase text-accent-steel mb-4 block">
-              QUESTIONNAIRE DISCLOSURES
+            <span className="eyebrow mb-4 block">
+              Questionnaire Disclosures
             </span>
-            <h2 className="text-2xl sm:text-3xl font-black text-text-primary uppercase tracking-tight mb-8">
-              Standard Vendor Security Answers
+            <h2 className="text-2xl sm:text-4xl font-medium text-text-primary tracking-tight mb-8">
+              Standard vendor security answers
             </h2>
             <div className="space-y-6 max-w-4xl text-xs font-mono">
               
-              <div className="p-6 bg-bg-secondary border border-border-color space-y-2">
+              <div className="p-6 bg-bg-secondary border border-border-color rounded-2xl space-y-2">
                 <span className="text-text-subtle uppercase block text-[10px]">
                   Q1: Where does client customer and transaction data reside?
                 </span>
@@ -76,16 +76,16 @@ export default function EnterprisePackPage() {
                 </p>
               </div>
 
-              <div className="p-6 bg-bg-secondary border border-border-color space-y-2">
+              <div className="p-6 bg-bg-secondary border border-border-color rounded-2xl space-y-2">
                 <span className="text-text-subtle uppercase block text-[10px]">
-                  Q2: Does Vanthrope hold SOC 2 or ISO 27001 certification?
+                  Q2: Does Vanthrope maintain SOC 2 or ISO 27001 multitenant hosting?
                 </span>
                 <p className="text-text-primary font-normal leading-relaxed">
-                  A: <strong>No. Not certified.</strong> Vanthrope is a boutique, founder-led systems engineering firm. We build systems that run directly within your certified cloud infrastructure, inheriting your cloud compliance boundary.
+                  A: Vanthrope does not operate a multitenant SaaS hosting environment. All production code, database instances, and data pipelines are provisioned exclusively within the client’s own SOC 2 / ISO 27001 certified cloud infrastructure (AWS / GCP / Azure / Supabase), directly inheriting your enterprise security perimeter and compliance policies.
                 </p>
               </div>
 
-              <div className="p-6 bg-bg-secondary border border-border-color space-y-2">
+              <div className="p-6 bg-bg-secondary border border-border-color rounded-2xl space-y-2">
                 <span className="text-text-subtle uppercase block text-[10px]">
                   Q3: What is the insurance coverage status?
                 </span>
@@ -94,7 +94,7 @@ export default function EnterprisePackPage() {
                 </p>
               </div>
 
-              <div className="p-6 bg-bg-secondary border border-border-color space-y-2">
+              <div className="p-6 bg-bg-secondary border border-border-color rounded-2xl space-y-2">
                 <span className="text-text-subtle uppercase block text-[10px]">
                   Q4: What is the backup and recovery testing protocol?
                 </span>

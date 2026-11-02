@@ -14,7 +14,7 @@ export default function FinalCta() {
         </h2>
 
         <p className="text-base text-text-muted max-w-2xl font-normal leading-relaxed mb-10">
-          Book a 20-minute discovery call directly with the founder. No sales reps, no pitch decks—just an honest technical audit of whether your problem is suitable for custom automation.
+          Schedule a 20-minute operational scoping session directly with our Principal Systems Architect. We evaluate your current transactional volume, assess database readiness, and determine the deterministic architecture required to eliminate your operational bottleneck.
         </p>
 
         <div className="flex flex-wrap items-center justify-center gap-4">
@@ -22,13 +22,13 @@ export default function FinalCta() {
             href="/contact"
             className="btn-primary !px-7 !py-3.5 !text-sm font-semibold rounded-full shadow-lg hover:-translate-y-0.5 transition-all"
           >
-            Book a 20-minute discovery call
+            Schedule 20-min Scoping Call
           </Link>
           <Link
             href="/tools"
             className="inline-flex items-center justify-center rounded-full px-7 py-3.5 text-sm font-medium border border-border-color text-text-primary hover:bg-bg-surface transition-all"
           >
-            Try a diagnostic tool
+            Run Operational Diagnostic &rarr;
           </Link>
           <Link
             href="/work"
@@ -48,7 +48,7 @@ export default function FinalCta() {
             href="https://arslanrehmani.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-text-primary underline hover:text-accent-steel transition-steel font-semibold inline-flex items-center gap-1"
+            className="text-text-primary underline hover:text-text-muted transition-colors font-semibold inline-flex items-center gap-1"
           >
             arslanrehmani.com &rarr;
           </a>

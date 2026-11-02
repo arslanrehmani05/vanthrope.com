@@ -24,7 +24,7 @@ export default function Founder() {
                 Since 2016, he has dedicated himself to a daily learning path across system architectures, data structures, and modern cloud deployment models. This dual capability allows him to diagnose operational leaks in mid-market companies and translate them directly into production-grade software.
               </p>
               <p>
-                As the developer behind TextileMode ERP and Belhide Operational Intelligence, Arslan established Vanthrope to build custom, automated AI agents that permanently eliminate administrative coordination costs.
+                As Founder &amp; Principal Systems Architect, and the engineer behind TextileMode ERP and Belhide Operational Intelligence, Arslan established Vanthrope to deploy deterministic software and autonomous agent systems that permanently eliminate administrative coordination friction and protect operating margins.
               </p>
             </div>
           </div>

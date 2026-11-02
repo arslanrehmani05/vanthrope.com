@@ -8,7 +8,7 @@ export const METHOD_STAGES = [
     tagline: 'Process observation and bottleneck mapping before drafting any code.',
     whatYouGet: 'Complete current-state process map, identified data leaks, architectural options, and a fixed-price Discovery Sprint report.',
     whatINeedFromYou: 'Access to screen-shares with the staff running the daily workflow and sample edge-case documents.',
-    howItCanFail: 'If leadership insulates the real clerks or hides unofficial spreadsheets, the design will solve the wrong problem.'
+    howItCanFail: 'If discovery is limited to high-level managerial summaries without direct observation of front-line edge-case workarounds.'
   },
   {
     step: '02',

@@ -25,14 +25,14 @@ export default async function WorkPage() {
         {/* Header */}
         <section className="bg-bg-primary py-24 sm:py-32 border-b border-border-color">
           <div className="max-w-7xl mx-auto px-6 text-left">
-            <span className="text-xs font-bold tracking-widest uppercase text-accent-steel mb-6 block">
-              EVIDENCE OF DELIVERY
+            <span className="eyebrow mb-6">
+              Evidence of Delivery
             </span>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-black tracking-tight text-text-primary uppercase leading-tight max-w-4xl mb-6">
-              Production case studies. Honest disclosures.
+            <h1 className="text-4xl sm:text-6xl lg:text-7xl font-medium tracking-tight text-text-primary leading-[1.08] max-w-4xl mb-6">
+              Verified production deployments &amp; architecture blueprints.
             </h1>
             <p className="text-base sm:text-lg text-text-muted font-normal max-w-3xl leading-relaxed">
-              Every system documented here includes its case-type classification (Client work vs. Own business testing labs vs. Synthetic demo), what went wrong during deployment, how safety guardrails were engineered, and verified outcome measures.
+              Detailed architectural breakdowns of mission-critical systems running in live production environments. Every case study documents operational constraints, deterministic safety guardrails, failure mode mitigations, and verified balance-sheet impact.
             </p>
           </div>
         </section>
@@ -44,7 +44,7 @@ export default async function WorkPage() {
               {cases.map((cs) => (
                 <div
                   key={cs.slug}
-                  className="bg-bg-primary border border-border-steel/20 p-8 sm:p-12 text-left transition-steel hover:border-accent-steel/50"
+                  className="bg-bg-primary border border-border-color rounded-2xl p-8 sm:p-12 text-left transition-all hover:border-white/20"
                 >
                   <div className="flex flex-wrap items-center justify-between gap-4 pb-6 border-b border-border-color mb-8">
                     <TruthBadge
@@ -59,10 +59,10 @@ export default async function WorkPage() {
 
                   <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start mb-8">
                     <div className="lg:col-span-8 space-y-4">
-                      <h2 className="text-2xl sm:text-3xl font-black text-text-primary uppercase tracking-tight">
+                      <h2 className="text-2xl sm:text-3xl font-semibold text-text-primary tracking-tight">
                         {cs.title}
                       </h2>
-                      <p className="text-xs font-mono text-accent-steel">
+                      <p className="text-xs font-mono text-text-subtle">
                         Context: {cs.clientContext}
                       </p>
                       <p className="text-sm text-text-muted leading-relaxed font-normal">
@@ -70,13 +70,13 @@ export default async function WorkPage() {
                       </p>
                     </div>
 
-                    <div className="lg:col-span-4 bg-bg-secondary p-6 border border-border-color space-y-4">
-                      <span className="text-[10px] font-mono uppercase tracking-widest text-accent-gold block">
+                    <div className="lg:col-span-4 bg-bg-secondary p-6 border border-border-color rounded-xl space-y-4">
+                      <span className="text-[10px] font-mono uppercase tracking-widest text-text-subtle block">
                         Verified Outcomes
                       </span>
                       {cs.results.map((r, rIdx) => (
                         <div key={rIdx} className="space-y-1">
-                          <div className="text-xl font-black text-text-primary font-mono">
+                          <div className="text-xl font-semibold text-text-primary font-mono">
                             {r.measure}
                           </div>
                           <div className="text-[11px] text-text-muted">
@@ -99,10 +99,10 @@ export default async function WorkPage() {
                     </div>
                     <Link
                       href={`/work/${cs.slug}`}
-                      className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-accent-steel hover:text-accent-steel-hover transition-steel"
+                      className="inline-flex items-center gap-2 text-xs font-medium text-text-primary hover:text-text-muted transition-colors"
                       style={{ minHeight: '44px' }}
                     >
-                      Read Full Blueprint & Architecture <ArrowRight className="w-4 h-4" />
+                      Read Full Blueprint &amp; Architecture <ArrowRight className="w-4 h-4" />
                     </Link>
                   </div>
                 </div>

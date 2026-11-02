@@ -33,8 +33,8 @@ export const SOLUTIONS_DATA: Record<string, SolutionDetail> = {
     relatedCaseSlug: 'textilemode-capacity-engine',
     relatedCaseName: 'TextileMode Capacity Engine (48h → 10h scheduling)',
     whatThisIsNot: [
-      'Not a generic Airtable or Notion template that you will outgrow in 3 months.',
-      'Not a bloated enterprise ERP that takes 18 months and $200k to implement.'
+      'Not no-code relational wrappers that fail under multi-user concurrency and enterprise audit requirements.',
+      'Not multi-year monolithic ERP replacements that introduce catastrophic operational disruption.'
     ],
     faq: [
       {
@@ -93,8 +93,8 @@ export const SOLUTIONS_DATA: Record<string, SolutionDetail> = {
     relatedCaseSlug: 'belhide-operational-intelligence',
     relatedCaseName: 'Belhide Multi-Channel Ledger',
     whatThisIsNot: [
-      'Not fragile Zapier or Make chains with rate-limit failures and hidden per-task fees.',
-      'Not a black-box middleware: you own the code and run it in your own cloud account.'
+      'Not consumer-grade iPaaS connectors vulnerable to rate-limit drops and unhandled webhook payloads.',
+      'Not a multi-tenant proprietary black box: all event-processing pipelines deploy directly into your cloud tenancy.'
     ],
     faq: [
       {

@@ -21,10 +21,10 @@ export default function TermsPage() {
 
         <section className="bg-bg-primary py-24 sm:py-32 border-b border-border-color text-left">
           <div className="max-w-4xl mx-auto px-6">
-            <span className="text-xs font-bold tracking-widest uppercase text-accent-steel mb-4 block">
-              CONTRACTUAL FRAMEWORK
+            <span className="eyebrow mb-4 block">
+              Contractual Framework
             </span>
-            <h1 className="text-4xl sm:text-5xl font-black tracking-tight text-text-primary uppercase leading-tight mb-8">
+            <h1 className="text-4xl sm:text-5xl font-medium tracking-tight text-text-primary leading-tight mb-8">
               Terms of Engagement
             </h1>
             <div className="text-xs font-mono text-text-subtle mb-12">

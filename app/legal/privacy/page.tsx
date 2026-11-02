@@ -20,14 +20,14 @@ export default function PrivacyPolicyPage() {
 
         <section className="bg-bg-primary py-24 sm:py-32 border-b border-border-color text-left">
           <div className="max-w-4xl mx-auto px-6">
-            <span className="text-xs font-bold tracking-widest uppercase text-accent-steel mb-4 block">
-              LEGAL GOVERNANCE
+            <span className="eyebrow mb-4 block">
+              Legal Governance
             </span>
-            <h1 className="text-4xl sm:text-5xl font-black tracking-tight text-text-primary uppercase leading-tight mb-8">
-              Privacy & Cookie Policy
+            <h1 className="text-4xl sm:text-5xl font-medium tracking-tight text-text-primary leading-tight mb-8">
+              Privacy &amp; Cookie Policy
             </h1>
             <div className="text-xs font-mono text-text-subtle mb-12">
-              Last Updated: 2026-11-02 · UK GDPR & EU Compliance Ready
+              Last Updated: 2026-11-02 · UK GDPR &amp; EU Compliance Ready
             </div>
 
             <div className="space-y-8 text-sm text-text-muted leading-relaxed font-normal">
@@ -80,7 +80,7 @@ export default function PrivacyPolicyPage() {
                   5. Contact for Data Protection
                 </h2>
                 <p>
-                  To exercise your rights to access, rectification, or deletion under the UK Data Protection Act 2018 or GDPR, contact <span className="font-mono text-accent-steel">privacy@vanthrope.com</span>.
+                  To exercise your rights to access, rectification, or deletion under the UK Data Protection Act 2018 or GDPR, contact <span className="font-mono text-text-primary">privacy@vanthrope.com</span>.
                 </p>
               </div>
 

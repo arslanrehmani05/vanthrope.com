@@ -84,28 +84,28 @@ export default function ServicesPage() {
         {/* 40-60 Word Direct Answer Opening */}
         <section className="bg-bg-primary py-24 sm:py-32 border-b border-border-color">
           <div className="max-w-7xl mx-auto px-6 text-left">
-            <span className="text-xs font-bold tracking-widest uppercase text-accent-steel mb-6 block">
-              ENGAGEMENT MODELS
+            <span className="eyebrow mb-6">
+              Engagement Models
             </span>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-black tracking-tight text-text-primary uppercase leading-tight max-w-4xl mb-8">
+            <h1 className="text-4xl sm:text-6xl lg:text-7xl font-medium tracking-tight text-text-primary leading-[1.08] max-w-4xl mb-8">
               Four structured ways we work together.
             </h1>
 
             {/* Direct Answer Box */}
-            <div className="p-8 bg-bg-secondary border-l-2 border-accent-steel max-w-3xl mb-12">
-              <span className="text-[10px] font-mono uppercase tracking-widest text-accent-steel block mb-2">
+            <div className="p-8 bg-bg-secondary border-l-2 border-border-color max-w-3xl mb-12 rounded-r-2xl">
+              <span className="text-[10px] font-mono uppercase tracking-widest text-text-subtle block mb-2">
                 Direct Answer
               </span>
               <p className="text-base sm:text-lg text-text-primary leading-relaxed font-normal">
-                Vanthrope operates strictly as a specialized engineering services firm, not a subscription software vendor. We engage through fixed-price discovery sprints, milestone-backed fixed-scope builds, embedded forward-deployed engineering, and ongoing care plans. All pricing is transparent and scoped after discovery, with contract-backed acceptance tests agreed up front.
+                Vanthrope engineers custom operational software and autonomous agent systems for mid-market enterprises. We engage through fixed-price discovery sprints, milestone-backed builds, embedded forward-deployed engineering, and ongoing care plans. All pricing is transparent and scoped after discovery, with contract-backed acceptance tests agreed up front.
               </p>
             </div>
 
             {/* Guarantee Terms Box */}
-            <div className="p-6 bg-bg-surface border border-border-steel/30 max-w-3xl flex items-start gap-4">
-              <ShieldCheck className="w-6 h-6 text-accent-steel shrink-0 mt-1" />
+            <div className="p-6 bg-bg-surface border border-border-color rounded-2xl max-w-3xl flex items-start gap-4">
+              <ShieldCheck className="w-6 h-6 text-text-primary shrink-0 mt-1" />
               <div>
-                <span className="text-xs font-mono font-bold uppercase tracking-widest text-text-primary block mb-1">
+                <span className="text-xs font-mono font-medium uppercase tracking-widest text-text-primary block mb-1">
                   Contract-Backed Guarantee
                 </span>
                 <p className="text-xs text-text-muted leading-relaxed font-normal">

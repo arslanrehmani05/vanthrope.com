@@ -1,16 +1,16 @@
 export default function WhatWeAreNot() {
   const columns = [
     {
-      title: 'Not a consultancy',
-      description: 'We do not produce slide decks, reports, or lists of recommendations. We build production-grade automated systems and deploy them directly into your operational environment.',
+      title: 'Production Software, Not Strategy Decks',
+      description: 'We deploy working software directly into your cloud tenancy. Our deliverables are versioned codebases, immutable database schemas, and parallel-verified automation pipelines.',
     },
     {
-      title: 'Not a software vendor',
-      description: 'We do not sell pre-packaged licenses, software subscriptions, or generic templates. We engineer custom operational solutions tailored specifically to your unique workflow constraints.',
+      title: 'Custom Engineering, Not Vendor SaaS',
+      description: 'We do not sell pre-packaged licenses, per-seat subscriptions, or generic templates. We engineer custom operational software tailored specifically to your unique workflow constraints.',
     },
     {
-      title: 'Not for everyone',
-      description: 'We work exclusively with mid-market businesses that have real operational friction worth solving and the internal commitment to restructure workflows properly.',
+      title: 'Dedicated Partnership, Not Mass Consulting',
+      description: 'We work exclusively with mid-market enterprises ($10M–$100M+) that have high-friction transactional bottlenecks and the executive commitment to automate safely.',
     },
   ];
 

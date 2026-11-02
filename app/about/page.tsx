@@ -26,14 +26,14 @@ export default function AboutPage() {
         {/* Header */}
         <section className="bg-bg-primary py-24 sm:py-32 border-b border-border-color">
           <div className="max-w-7xl mx-auto px-6 text-left">
-            <span className="text-xs font-bold tracking-widest uppercase text-accent-steel mb-6 block">
-              FOUNDER & PHILOSOPHY
+            <span className="eyebrow mb-6">
+              Engineering Ethos &amp; Founder Credentials
             </span>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-black tracking-tight text-text-primary uppercase leading-tight max-w-4xl mb-6">
-              Engineering systems with general ledger rigor.
+            <h1 className="text-4xl sm:text-6xl lg:text-7xl font-medium tracking-tight text-text-primary leading-[1.08] max-w-4xl mb-6">
+              Operational software engineered with general ledger rigor.
             </h1>
             <p className="text-base sm:text-lg text-text-muted font-normal max-w-3xl leading-relaxed">
-              Vanthrope was established to eliminate the chronic friction between corporate finance rules and custom software engineering. We build systems that run operations safely and protect margins.
+              Most enterprise software projects fail because software engineers do not understand financial ledgers, and finance teams do not write production code. Vanthrope bridges this divide—engineering deterministic software and autonomous agent systems that protect operating margins.
             </p>
           </div>
         </section>
@@ -45,7 +45,7 @@ export default function AboutPage() {
               
               {/* Photo & Identity (4 cols) */}
               <div className="lg:col-span-4 flex flex-col items-start gap-6">
-                <div className="relative w-64 h-64 md:w-80 md:h-80 border border-accent-steel overflow-hidden bg-bg-primary">
+                <div className="relative w-64 h-64 md:w-80 md:h-80 border border-border-color overflow-hidden bg-bg-primary rounded-2xl">
                   <Image
                     src="/headshot.png"
                     alt="Arslan Rehmani portrait"
@@ -56,10 +56,10 @@ export default function AboutPage() {
                   />
                 </div>
                 <div>
-                  <h2 className="text-2xl font-black text-text-primary uppercase tracking-tight">
+                  <h2 className="text-2xl font-semibold text-text-primary tracking-tight">
                     Arslan Rehmani
                   </h2>
-                  <div className="text-xs font-mono text-accent-steel mt-1">
+                  <div className="text-xs font-mono text-text-muted mt-1">
                     Founder &amp; Principal Systems Architect
                   </div>
                   <div className="text-[11px] font-mono text-text-subtle mt-0.5">
@@ -70,7 +70,7 @@ export default function AboutPage() {
 
               {/* Bio & Dual Competency (8 cols) */}
               <div className="lg:col-span-8 space-y-6 text-sm text-text-muted leading-relaxed font-normal">
-                <div className="p-4 bg-bg-primary border border-border-steel/30 text-xs font-mono text-accent-gold">
+                <div className="p-4 bg-bg-primary border border-border-color text-xs font-mono text-text-primary rounded-lg">
                   Verified Credential: {accaStatus}.
                 </div>
 
@@ -83,16 +83,16 @@ export default function AboutPage() {
                 </p>
 
                 <p>
-                  As the engineer behind TextileMode ERP (automating loom capacity for mid-market textile manufacturing) and Belhide Operational Intelligence (unifying real-time tannery yield and order feeds), Arslan works directly with every Vanthrope client from initial diagnostic sprint to production deployment.
+                  As Founder &amp; Principal Systems Architect, Arslan has engineered systems operating at scale across mission-critical environments: TextileMode ERP (managing PKR 3 crore / $107k/mo across 27 industrial looms with 10 clerks compressed to 1 review operator) and Belhide Operational Intelligence (eliminating 14% grading discrepancies across 3,000+ daily hides).
                 </p>
 
-                <div className="p-4 bg-bg-primary border border-border-color text-xs text-text-muted leading-relaxed font-mono">
+                <div className="p-4 bg-bg-primary border border-border-color text-xs text-text-muted leading-relaxed font-mono rounded-lg">
                   For Arslan&apos;s personal engineering field notes, open proof ledger, and interactive diagnostic scans, visit{' '}
                   <a
                     href="https://arslanrehmani.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-text-primary underline hover:text-accent-steel transition-steel inline-flex items-center gap-1 font-semibold"
+                    className="text-text-primary underline hover:text-text-muted transition-colors inline-flex items-center gap-1 font-semibold"
                   >
                     arslanrehmani.com <ArrowRight className="w-3.5 h-3.5" />
                   </a>
@@ -101,7 +101,7 @@ export default function AboutPage() {
                 <div className="pt-4 border-t border-border-color flex flex-wrap gap-6 text-xs font-mono">
                   <Link
                     href="/proof-ledger"
-                    className="text-accent-steel hover:text-accent-steel-hover transition-steel flex items-center gap-1"
+                    className="text-text-primary hover:text-text-muted transition-colors flex items-center gap-1"
                   >
                     View Verified Claims in Proof Ledger <ArrowRight className="w-4 h-4" />
                   </Link>
@@ -115,37 +115,37 @@ export default function AboutPage() {
         {/* Working Norms Section */}
         <section className="bg-bg-primary py-20 sm:py-28 border-b border-border-color">
           <div className="max-w-7xl mx-auto px-6 text-left">
-            <span className="text-xs font-bold tracking-widest uppercase text-accent-steel mb-4 block">
-              OPERATIONAL CADENCE
+            <span className="eyebrow mb-4 block">
+              Operational Cadence
             </span>
-            <h2 className="text-2xl sm:text-3xl font-black text-text-primary uppercase tracking-tight mb-8">
-              Our Working Norms
+            <h2 className="text-2xl sm:text-4xl font-medium text-text-primary tracking-tight mb-8">
+              Our working norms
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               
-              <div className="p-8 bg-bg-secondary border border-border-color space-y-3">
-                <Clock className="w-5 h-5 text-accent-steel" />
-                <h3 className="font-bold text-text-primary uppercase text-sm">
-                  Response Times
+              <div className="p-8 bg-bg-secondary border border-border-color rounded-2xl space-y-3">
+                <Clock className="w-5 h-5 text-text-primary" />
+                <h3 className="font-semibold text-text-primary text-sm">
+                  Direct Architectural SLA
                 </h3>
                 <p className="text-xs text-text-muted leading-relaxed font-normal">
-                  All active client inquiries receive a direct technical response within 4 business hours. No ticketing bureaucracy or support call-centers.
+                  Active deployments carry guaranteed 4-hour technical response SLAs handled directly by the engineering team deploying your infrastructure.
                 </p>
               </div>
 
-              <div className="p-8 bg-bg-secondary border border-border-color space-y-3">
-                <ShieldCheck className="w-5 h-5 text-accent-steel" />
-                <h3 className="font-bold text-text-primary uppercase text-sm">
-                  Weekly Demos & Video Briefs
+              <div className="p-8 bg-bg-secondary border border-border-color rounded-2xl space-y-3">
+                <ShieldCheck className="w-5 h-5 text-text-primary" />
+                <h3 className="font-semibold text-text-primary text-sm">
+                  Weekly Demos &amp; Video Briefs
                 </h3>
                 <p className="text-xs text-text-muted leading-relaxed font-normal">
                   Every Friday, clients receive a 5-minute Loom video walking through what was shipped, current test pass rates, and next week’s milestone.
                 </p>
               </div>
 
-              <div className="p-8 bg-bg-secondary border border-border-color space-y-3">
-                <Mail className="w-5 h-5 text-accent-steel" />
-                <h3 className="font-bold text-text-primary uppercase text-sm">
+              <div className="p-8 bg-bg-secondary border border-border-color rounded-2xl space-y-3">
+                <Mail className="w-5 h-5 text-text-primary" />
+                <h3 className="font-semibold text-text-primary text-sm">
                   Async-First Communication
                 </h3>
                 <p className="text-xs text-text-muted leading-relaxed font-normal">

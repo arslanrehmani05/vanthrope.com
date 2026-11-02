@@ -22,10 +22,10 @@ export default function ToolsHubPage() {
         {/* Header */}
         <section className="bg-bg-primary py-24 sm:py-32 border-b border-border-color">
           <div className="max-w-7xl mx-auto px-6 text-left">
-            <span className="text-xs font-bold tracking-widest uppercase text-accent-steel mb-6 block">
-              DIAGNOSTIC SUITE
+            <span className="eyebrow mb-6">
+              Diagnostic Suite
             </span>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-black tracking-tight text-text-primary uppercase leading-tight max-w-4xl mb-6">
+            <h1 className="text-4xl sm:text-6xl lg:text-7xl font-medium tracking-tight text-text-primary leading-[1.08] max-w-4xl mb-6">
               7 in-browser operational tools. Zero signup required.
             </h1>
             <p className="text-base sm:text-lg text-text-muted font-normal max-w-3xl leading-relaxed">

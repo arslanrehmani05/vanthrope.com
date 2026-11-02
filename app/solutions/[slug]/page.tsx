@@ -47,16 +47,16 @@ export default function SolutionDetailPage({ params }: Props) {
         {/* Hero Section: Problem in the Client's Words */}
         <section className="bg-bg-primary py-24 sm:py-32 border-b border-border-color">
           <div className="max-w-7xl mx-auto px-6 text-left">
-            <span className="text-xs font-bold tracking-widest uppercase text-accent-steel mb-6 block">
+            <span className="eyebrow mb-6">
               {sol.categoryEyebrow}
             </span>
-            <h1 className="text-3xl sm:text-5xl font-black tracking-tight text-text-primary uppercase leading-tight max-w-4xl mb-8">
+            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-medium tracking-tight text-text-primary leading-[1.08] max-w-4xl mb-8">
               {sol.title}
             </h1>
 
             {/* Quote block */}
-            <div className="p-8 bg-bg-secondary border-l-2 border-accent-steel max-w-3xl my-8">
-              <div className="text-[11px] font-mono uppercase tracking-widest text-accent-steel mb-3">
+            <div className="p-8 bg-bg-secondary border-l-2 border-border-color max-w-3xl my-8 rounded-r-2xl">
+              <div className="text-[11px] font-mono uppercase tracking-widest text-text-subtle mb-3">
                 The Problem In The Client&apos;s Words
               </div>
               <p className="text-base sm:text-lg text-text-primary font-normal leading-relaxed italic">
@@ -84,16 +84,16 @@ export default function SolutionDetailPage({ params }: Props) {
               
               {/* Left Column: What We Build (7 cols) */}
               <div className="lg:col-span-7 flex flex-col text-left">
-                <span className="text-xs font-bold tracking-widest uppercase text-accent-steel mb-4 block">
-                  TECHNICAL DELIVERABLES
+                <span className="eyebrow mb-4 block">
+                  Technical Deliverables
                 </span>
-                <h2 className="text-2xl sm:text-3xl font-black text-text-primary uppercase tracking-tight mb-8">
+                <h2 className="text-2xl sm:text-4xl font-medium text-text-primary tracking-tight mb-8">
                   What we build
                 </h2>
                 <div className="space-y-4">
                   {sol.whatWeBuild.map((item, idx) => (
-                    <div key={idx} className="flex items-start gap-3 p-4 bg-bg-primary border border-border-color">
-                      <CheckCircle2 className="w-5 h-5 text-accent-steel shrink-0 mt-0.5" />
+                    <div key={idx} className="flex items-start gap-3 p-4 bg-bg-primary border border-border-color rounded-xl">
+                      <CheckCircle2 className="w-5 h-5 text-text-primary shrink-0 mt-0.5" />
                       <span className="text-sm text-text-muted leading-relaxed font-normal">
                         {item}
                       </span>
@@ -104,17 +104,17 @@ export default function SolutionDetailPage({ params }: Props) {
 
               {/* Right Column: Workflow Diagram (5 cols) */}
               <div className="lg:col-span-5 flex flex-col text-left">
-                <span className="text-xs font-bold tracking-widest uppercase text-accent-steel mb-4 block">
-                  ARCHITECTURE
+                <span className="eyebrow mb-4 block">
+                  Architecture
                 </span>
-                <h2 className="text-2xl sm:text-3xl font-black text-text-primary uppercase tracking-tight mb-8">
+                <h2 className="text-2xl sm:text-4xl font-medium text-text-primary tracking-tight mb-8">
                   Workflow pipeline
                 </h2>
-                <div className="bg-bg-primary border border-border-steel/40 p-6 font-mono text-xs text-text-muted">
-                  <div className="text-[10px] text-accent-gold uppercase tracking-widest mb-4">
+                <div className="bg-bg-primary border border-border-color rounded-2xl p-6 font-mono text-xs text-text-muted">
+                  <div className="text-[10px] text-text-subtle uppercase tracking-widest mb-4">
                     Deterministic Action Flow
                   </div>
-                  <div className="p-4 bg-bg-secondary border border-border-color text-text-primary font-mono text-xs leading-loose">
+                  <div className="p-4 bg-bg-secondary border border-border-color rounded-xl text-text-primary font-mono text-xs leading-loose">
                     {sol.workflowDiagramText}
                   </div>
                   <div className="mt-4 text-[11px] text-text-subtle">
@@ -135,12 +135,12 @@ export default function SolutionDetailPage({ params }: Props) {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
               
               {/* Relevant Tool */}
-              <div className="bg-bg-secondary border border-border-steel/20 p-8 flex flex-col justify-between">
+              <div className="bg-bg-secondary border border-border-color rounded-2xl p-8 flex flex-col justify-between">
                 <div>
-                  <span className="text-[10px] font-mono uppercase tracking-widest text-accent-steel mb-2 block">
+                  <span className="text-[10px] font-mono uppercase tracking-widest text-text-subtle mb-2 block">
                     Interactive Diagnostic Tool
                   </span>
-                  <h3 className="text-xl font-black text-text-primary uppercase tracking-tight mb-3">
+                  <h3 className="text-xl font-semibold text-text-primary tracking-tight mb-3">
                     {sol.relevantToolName}
                   </h3>
                   <p className="text-xs text-text-muted leading-relaxed mb-6">
@@ -150,7 +150,7 @@ export default function SolutionDetailPage({ params }: Props) {
                 <div>
                   <Link
                     href={`/tools/${sol.relevantToolSlug}`}
-                    className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-accent-steel hover:text-accent-steel-hover transition-steel"
+                    className="inline-flex items-center gap-2 text-xs font-medium text-text-primary hover:text-text-muted transition-colors"
                     style={{ minHeight: '44px' }}
                   >
                     Open Diagnostic Tool <ArrowRight className="w-4 h-4" />
@@ -159,12 +159,12 @@ export default function SolutionDetailPage({ params }: Props) {
               </div>
 
               {/* Related Case Study */}
-              <div className="bg-bg-secondary border border-border-steel/20 p-8 flex flex-col justify-between">
+              <div className="bg-bg-secondary border border-border-color rounded-2xl p-8 flex flex-col justify-between">
                 <div>
-                  <span className="text-[10px] font-mono uppercase tracking-widest text-accent-gold mb-2 block">
+                  <span className="text-[10px] font-mono uppercase tracking-widest text-text-subtle mb-2 block">
                     Production Evidence
                   </span>
-                  <h3 className="text-xl font-black text-text-primary uppercase tracking-tight mb-3">
+                  <h3 className="text-xl font-semibold text-text-primary tracking-tight mb-3">
                     {sol.relatedCaseName}
                   </h3>
                   <p className="text-xs text-text-muted leading-relaxed mb-6">
@@ -174,7 +174,7 @@ export default function SolutionDetailPage({ params }: Props) {
                 <div>
                   <Link
                     href={`/work/${sol.relatedCaseSlug}`}
-                    className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-accent-steel hover:text-accent-steel-hover transition-steel"
+                    className="inline-flex items-center gap-2 text-xs font-medium text-text-primary hover:text-text-muted transition-colors"
                     style={{ minHeight: '44px' }}
                   >
                     Inspect Full Case Study <ArrowRight className="w-4 h-4" />
@@ -190,15 +190,15 @@ export default function SolutionDetailPage({ params }: Props) {
         {/* What This Is Not */}
         <section className="bg-bg-secondary py-24 sm:py-32 border-b border-border-color">
           <div className="max-w-7xl mx-auto px-6 text-left">
-            <span className="text-xs font-bold tracking-widest uppercase text-accent-steel mb-4 block">
-              HONEST BOUNDARIES
+            <span className="eyebrow mb-4 block">
+              Honest Boundaries
             </span>
-            <h2 className="text-2xl sm:text-3xl font-black text-text-primary uppercase tracking-tight mb-8">
+            <h2 className="text-2xl sm:text-4xl font-medium text-text-primary tracking-tight mb-8">
               What this is not
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl">
               {sol.whatThisIsNot.map((item, idx) => (
-                <div key={idx} className="flex items-start gap-3 p-6 bg-bg-primary border border-border-color">
+                <div key={idx} className="flex items-start gap-3 p-6 bg-bg-primary border border-border-color rounded-2xl">
                   <XCircle className="w-5 h-5 text-rose-400 shrink-0 mt-0.5" />
                   <span className="text-sm text-text-muted leading-relaxed font-normal">
                     {item}
@@ -212,16 +212,16 @@ export default function SolutionDetailPage({ params }: Props) {
         {/* Short FAQ of Real Questions Only */}
         <section className="bg-bg-primary py-24 sm:py-32 border-b border-border-color">
           <div className="max-w-7xl mx-auto px-6 text-left">
-            <span className="text-xs font-bold tracking-widest uppercase text-accent-steel mb-4 block">
-              PRACTICAL FAQ
+            <span className="eyebrow mb-4 block">
+              Practical FAQ
             </span>
-            <h2 className="text-2xl sm:text-3xl font-black text-text-primary uppercase tracking-tight mb-10">
+            <h2 className="text-2xl sm:text-4xl font-medium text-text-primary tracking-tight mb-10">
               Questions real operations teams ask
             </h2>
             <div className="space-y-6 max-w-3xl">
               {sol.faq.map((f, idx) => (
-                <div key={idx} className="p-6 bg-bg-secondary border border-border-color">
-                  <h3 className="text-sm font-bold text-text-primary uppercase tracking-tight mb-2">
+                <div key={idx} className="p-6 bg-bg-secondary border border-border-color rounded-2xl">
+                  <h3 className="text-sm font-semibold text-text-primary tracking-tight mb-2">
                     {f.q}
                   </h3>
                   <p className="text-xs text-text-muted leading-relaxed font-normal">

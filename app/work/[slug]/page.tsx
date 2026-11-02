@@ -56,17 +56,17 @@ export default async function CaseStudyDetailPage({ params }: Props) {
               className="mb-6"
             />
             
-            <h1 className="text-3xl sm:text-5xl font-black tracking-tight text-text-primary uppercase leading-tight max-w-4xl mb-4">
+            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-medium tracking-tight text-text-primary leading-[1.08] max-w-4xl mb-4">
               {cs.title}
             </h1>
 
-            <p className="text-sm font-mono text-accent-steel mb-8">
+            <p className="text-sm font-mono text-text-muted mb-8">
               Context: {cs.clientContext}
             </p>
 
             {/* Problem in Their Words */}
-            <div className="p-8 bg-bg-secondary border-l-2 border-accent-steel max-w-3xl mb-12">
-              <span className="text-[10px] font-mono uppercase tracking-widest text-accent-steel block mb-2">
+            <div className="p-8 bg-bg-secondary border-l-2 border-border-color max-w-3xl mb-12 rounded-r-2xl">
+              <span className="text-[10px] font-mono uppercase tracking-widest text-text-subtle block mb-2">
                 The Operational Problem
               </span>
               <p className="text-base text-text-primary font-normal leading-relaxed italic">
@@ -76,21 +76,21 @@ export default async function CaseStudyDetailPage({ params }: Props) {
 
             {/* Quick Stats Grid */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl text-xs font-mono">
-              <div className="p-4 bg-bg-surface border border-border-color">
+              <div className="p-4 bg-bg-surface border border-border-color rounded-xl">
                 <span className="text-text-subtle block text-[10px] uppercase">Timeline</span>
-                <span className="text-text-primary font-bold">{cs.timeline}</span>
+                <span className="text-text-primary font-semibold">{cs.timeline}</span>
               </div>
-              <div className="p-4 bg-bg-surface border border-border-color">
+              <div className="p-4 bg-bg-surface border border-border-color rounded-xl">
                 <span className="text-text-subtle block text-[10px] uppercase">Classification</span>
-                <span className="text-accent-steel font-bold">{cs.caseType}</span>
+                <span className="text-text-primary font-semibold">{cs.caseType}</span>
               </div>
-              <div className="p-4 bg-bg-surface border border-border-color">
+              <div className="p-4 bg-bg-surface border border-border-color rounded-xl">
                 <span className="text-text-subtle block text-[10px] uppercase">Status</span>
-                <span className="text-accent-gold font-bold">{cs.maturity}</span>
+                <span className="text-emerald-400 font-semibold">{cs.maturity}</span>
               </div>
-              <div className="p-4 bg-bg-surface border border-border-color">
+              <div className="p-4 bg-bg-surface border border-border-color rounded-xl">
                 <span className="text-text-subtle block text-[10px] uppercase">Truth Gate Evidence</span>
-                <span className="text-text-primary font-bold">[{cs.evidenceId}]</span>
+                <span className="text-text-primary font-semibold">[{cs.evidenceId}]</span>
               </div>
             </div>
 
@@ -105,16 +105,16 @@ export default async function CaseStudyDetailPage({ params }: Props) {
               {/* Constraints & Solution (7 cols) */}
               <div className="lg:col-span-7 space-y-8">
                 <div>
-                  <span className="text-xs font-bold tracking-widest uppercase text-accent-steel mb-3 block">
-                    OPERATIONAL CONSTRAINTS
+                  <span className="eyebrow mb-3 block">
+                    Operational Constraints
                   </span>
-                  <h2 className="text-2xl font-black text-text-primary uppercase tracking-tight mb-4">
+                  <h2 className="text-2xl sm:text-3xl font-medium text-text-primary tracking-tight mb-4">
                     Real-world boundaries
                   </h2>
                   <div className="space-y-2.5">
                     {cs.constraints.map((c, cIdx) => (
                       <div key={cIdx} className="flex items-start gap-2.5 text-xs text-text-muted font-normal">
-                        <span className="text-accent-steel font-bold">▸</span>
+                        <span className="text-text-primary font-bold">▸</span>
                         <span>{c}</span>
                       </div>
                     ))}
@@ -122,10 +122,10 @@ export default async function CaseStudyDetailPage({ params }: Props) {
                 </div>
 
                 <div>
-                  <span className="text-xs font-bold tracking-widest uppercase text-accent-steel mb-3 block">
-                    ENGINEERED SOLUTION
+                  <span className="eyebrow mb-3 block">
+                    Engineered Solution
                   </span>
-                  <h2 className="text-2xl font-black text-text-primary uppercase tracking-tight mb-4">
+                  <h2 className="text-2xl sm:text-3xl font-medium text-text-primary tracking-tight mb-4">
                     What was deployed
                   </h2>
                   <p className="text-sm text-text-muted leading-relaxed font-normal">
@@ -135,10 +135,10 @@ export default async function CaseStudyDetailPage({ params }: Props) {
               </div>
 
               {/* Safety Guardrails (5 cols) */}
-              <div className="lg:col-span-5 bg-bg-primary border border-border-steel/30 p-8 space-y-6">
-                <div className="flex items-center gap-2 text-accent-steel">
+              <div className="lg:col-span-5 bg-bg-primary border border-border-color rounded-2xl p-8 space-y-6">
+                <div className="flex items-center gap-2 text-text-primary">
                   <ShieldCheck className="w-5 h-5" />
-                  <span className="text-xs font-mono font-bold uppercase tracking-wider">
+                  <span className="text-xs font-mono font-medium uppercase tracking-wider">
                     How it is kept safe
                   </span>
                 </div>
@@ -159,17 +159,17 @@ export default async function CaseStudyDetailPage({ params }: Props) {
         {/* Results & Signed Quote */}
         <section className="bg-bg-primary py-20 sm:py-28 border-b border-border-color">
           <div className="max-w-7xl mx-auto px-6 text-left">
-            <span className="text-xs font-bold tracking-widest uppercase text-accent-steel mb-4 block">
-              MEASURED OUTCOMES
+            <span className="eyebrow mb-4 block">
+              Measured Outcomes
             </span>
-            <h2 className="text-2xl sm:text-3xl font-black text-text-primary uppercase tracking-tight mb-10">
-              Verified Results
+            <h2 className="text-2xl sm:text-4xl font-medium text-text-primary tracking-tight mb-10">
+              Verified results
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12 max-w-4xl">
               {cs.results.map((r, rIdx) => (
-                <div key={rIdx} className="p-6 bg-bg-secondary border border-border-color">
-                  <div className="text-2xl sm:text-3xl font-black text-text-primary font-mono mb-2">
+                <div key={rIdx} className="p-6 bg-bg-secondary border border-border-color rounded-2xl">
+                  <div className="text-2xl sm:text-3xl font-semibold text-text-primary font-mono mb-2">
                     {r.measure}
                   </div>
                   <div className="text-xs text-text-muted">
@@ -184,8 +184,8 @@ export default async function CaseStudyDetailPage({ params }: Props) {
 
             {/* Signed Quote */}
             {cs.signedQuote && (
-              <div className="p-8 bg-bg-secondary border border-border-steel/20 max-w-3xl flex items-start gap-4">
-                <Quote className="w-6 h-6 text-accent-steel shrink-0 mt-1" />
+              <div className="p-8 bg-bg-secondary border border-border-color rounded-2xl max-w-3xl flex items-start gap-4">
+                <Quote className="w-6 h-6 text-text-primary shrink-0 mt-1" />
                 <div className="space-y-2">
                   <p className="text-sm text-text-primary italic leading-relaxed">
                     &ldquo;{cs.signedQuote.quote}&rdquo;
@@ -205,13 +205,13 @@ export default async function CaseStudyDetailPage({ params }: Props) {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl">
               
               {/* What Went Wrong */}
-              <div className="space-y-4 p-8 bg-bg-primary border border-border-color">
-                <div className="flex items-center gap-2 text-rose-400 font-mono text-xs uppercase font-bold">
+              <div className="space-y-4 p-8 bg-bg-primary border border-border-color rounded-2xl">
+                <div className="flex items-center gap-2 text-rose-400 font-mono text-xs uppercase font-medium">
                   <AlertTriangle className="w-4 h-4" />
-                  What Went Wrong & What Changed
+                  What Went Wrong &amp; What Changed
                 </div>
-                <h3 className="text-lg font-bold text-text-primary uppercase">
-                  The Friction Encountered
+                <h3 className="text-lg font-semibold text-text-primary">
+                  The friction encountered
                 </h3>
                 <p className="text-xs text-text-muted leading-relaxed font-normal">
                   <strong className="text-text-primary">Friction:</strong> {cs.whatWentWrong}
@@ -222,12 +222,12 @@ export default async function CaseStudyDetailPage({ params }: Props) {
               </div>
 
               {/* What I'd Do Differently */}
-              <div className="space-y-4 p-8 bg-bg-primary border border-border-color">
-                <div className="font-mono text-xs uppercase font-bold text-accent-steel">
+              <div className="space-y-4 p-8 bg-bg-primary border border-border-color rounded-2xl">
+                <div className="font-mono text-xs uppercase font-medium text-text-subtle">
                   Post-Mortem Reflection
                 </div>
-                <h3 className="text-lg font-bold text-text-primary uppercase">
-                  What I&apos;d Do Differently
+                <h3 className="text-lg font-semibold text-text-primary">
+                  What I&apos;d do differently
                 </h3>
                 <p className="text-xs text-text-muted leading-relaxed font-normal">
                   {cs.whatIdDoDifferently}
