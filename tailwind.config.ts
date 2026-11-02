@@ -19,6 +19,7 @@ const config: Config = {
         'accent-steel-hover': 'var(--accent-steel-hover)',
         'accent-gold': 'var(--accent-gold)',
         'border-color': 'var(--border)',
+        'border-gold': 'var(--border-gold)',
         'border-steel': 'var(--border-steel)',
       },
       fontFamily: {

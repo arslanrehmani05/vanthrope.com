@@ -1,0 +1,235 @@
+{
+  "$schema": "./facts.schema.json",
+  "version": "1.0.0",
+  "lastAudited": "2026-11-02T11:35:00Z",
+  "meta": {
+    "organization": "Vanthrope",
+    "positioning": "Operational Systems Firm",
+    "teamModel": "Founder-led",
+    "businessModel": "Services only (No subscription software product)"
+  },
+  "placeholders": {
+    "BASE_LOCATION": {
+      "status": "UNRESOLVED",
+      "value": null,
+      "fallback": "Location on inquiry",
+      "description": "Founder primary operating base"
+    },
+    "TIMEZONES": {
+      "status": "UNRESOLVED",
+      "value": null,
+      "fallback": "UK & US Eastern",
+      "description": "Working timezones with routine overlap"
+    },
+    "OVERLAP": {
+      "status": "UNRESOLVED",
+      "value": null,
+      "fallback": "4 hours daily minimum",
+      "description": "Specific daily working overlap window"
+    },
+    "VISITS": {
+      "status": "UNRESOLVED",
+      "value": null,
+      "fallback": "Available for discovery sprints by arrangement",
+      "description": "Policy for on-site client visits"
+    },
+    "TEAM": {
+      "status": "FALLBACK_APPLIED",
+      "value": "Vanthrope (founder-led)",
+      "fallback": "Vanthrope (founder-led)",
+      "description": "Team designation until additional personnel are verified"
+    },
+    "LEGAL_ENTITY": {
+      "status": "UNRESOLVED",
+      "value": null,
+      "fallback": null,
+      "description": "Registered company name, number, and office. Must remain hidden until verified."
+    },
+    "PRICING": {
+      "status": "FALLBACK_APPLIED",
+      "value": "Scoped after discovery",
+      "fallback": "Scoped after discovery",
+      "description": "Engagement pricing policy"
+    },
+    "GUARANTEE_TERMS": {
+      "status": "FALLBACK_APPLIED",
+      "value": "Contract-backed acceptance tests agreed up front before deployment",
+      "fallback": "Contract-backed acceptance tests agreed up front before deployment",
+      "description": "Specific contract-backed guarantee phrasing"
+    },
+    "QUICKFORMA_POLICY": {
+      "status": "RESTRICTED",
+      "value": null,
+      "fallback": null,
+      "description": "Policy for linking QuickForma. Must remain unlinked unless explicitly permitted."
+    },
+    "ACCA_STATUS": {
+      "status": "VERIFIED_PRECISE",
+      "value": "ACCA-qualified finance professional turned developer",
+      "fallback": "ACCA-qualified finance professional turned developer",
+      "description": "Precise wording for founder financial qualification"
+    },
+    "INSURANCE_STATUS": {
+      "status": "UNRESOLVED",
+      "value": null,
+      "fallback": "Professional indemnity details available in contract review",
+      "description": "Professional indemnity and cyber liability coverage status"
+    }
+  },
+  "evidence": [
+    {
+      "id": "ev-tm-01",
+      "category": "case_study",
+      "subject": "TextileMode ERP",
+      "caseType": "Client work",
+      "maturity": "Running in production",
+      "claim": "TextileMode automated capacity scheduling and machine allocation, reducing weekly scheduling time from 48h to 10h.",
+      "metric": "48h → 10h",
+      "metricLabel": "Weekly coordination time",
+      "verificationSource": "Production deployment logs and client operational sign-off",
+      "verifiedDate": "2024-06-15",
+      "status": "VERIFIED",
+      "details": "Client operates mid-market textile manufacturing with multi-loom routing and yarn batching."
+    },
+    {
+      "id": "ev-tm-02",
+      "category": "case_study",
+      "subject": "TextileMode ERP",
+      "caseType": "Client work",
+      "maturity": "Running in production",
+      "claim": "Eliminated manual order-to-loom scheduling backlogs across active factory lines.",
+      "metric": "Zero backlog",
+      "metricLabel": "Scheduling queue latency",
+      "verificationSource": "Operational dispatch reports",
+      "verifiedDate": "2024-06-15",
+      "status": "VERIFIED",
+      "details": "Dynamic capacity matching based on loom speeds and yarn inventory."
+    },
+    {
+      "id": "ev-bh-01",
+      "category": "case_study",
+      "subject": "Belhide Ops",
+      "caseType": "Own business",
+      "maturity": "Running in production",
+      "claim": "Belhide Ecommerce backend unified 7 fragmented feeds (Shopify, Meta Ads, DHL) into automated daily reconciliations.",
+      "metric": "7 feeds",
+      "metricLabel": "Operational feeds automated",
+      "verificationSource": "Belhide production integration architecture and live API pipelines",
+      "verifiedDate": "2024-09-01",
+      "status": "VERIFIED",
+      "details": "Brand co-owned by founder; used as a production testing bed for high-volume retail automation."
+    },
+    {
+      "id": "ev-bh-02",
+      "category": "case_study",
+      "subject": "Belhide Ops",
+      "caseType": "Own business",
+      "maturity": "Running in production",
+      "claim": "Automated ledger balancing and daily margin reconciliation, replacing manual copy-pasting.",
+      "metric": "Zero",
+      "metricLabel": "Manual spreadsheet copy-pasting",
+      "verificationSource": "Belhide operational records",
+      "verifiedDate": "2024-09-01",
+      "status": "VERIFIED",
+      "details": "Reconciles gross margins against live marketing spend and shipping carrier rates."
+    },
+    {
+      "id": "ev-fin-01",
+      "category": "case_study",
+      "subject": "Finance Operations Suite",
+      "caseType": "Client work",
+      "maturity": "Running in production",
+      "claim": "Automated double-entry reconciliation between bank feeds and operational ERP entries with strict schema validation.",
+      "metric": "100%",
+      "metricLabel": "Schema-validated ledger entries",
+      "verificationSource": "Finance suite audit logs",
+      "verifiedDate": "2024-08-20",
+      "status": "VERIFIED",
+      "details": "Reconciliation engine catching mismatches prior to general ledger posting."
+    },
+    {
+      "id": "ev-synth-01",
+      "category": "demo",
+      "subject": "Intelligent Document Ingestion Engine",
+      "caseType": "Demo product",
+      "maturity": "Running in production",
+      "claim": "Automated PDF and invoice parser extracting line items with deterministic checksum validation on synthetic commercial data.",
+      "metric": "Deterministic",
+      "metricLabel": "Mathematical checksum validation",
+      "verificationSource": "Public test harness running against synthetic invoices",
+      "verifiedDate": "2026-10-20",
+      "status": "VERIFIED",
+      "details": "Synthetic commercial dataset with deliberate injection attempts and corrupted line totals."
+    },
+    {
+      "id": "ev-synth-02",
+      "category": "demo",
+      "subject": "Agent Safety Simulator (Break-It)",
+      "caseType": "Demo product",
+      "maturity": "Running in production",
+      "claim": "Deterministic recovery when encountering malformed inputs, duplicated webhooks, or prompt injections.",
+      "metric": "100% trapped",
+      "metricLabel": "Synthetic anomaly containment",
+      "verificationSource": "Interactive synthetic break-it test suite",
+      "verifiedDate": "2026-10-25",
+      "status": "VERIFIED",
+      "details": "Demonstrates strict schema trapping and human-in-the-loop escalation."
+    },
+    {
+      "id": "ev-fnd-01",
+      "category": "credential",
+      "subject": "Arslan Rehmani",
+      "caseType": "Client work",
+      "maturity": "Running in production",
+      "claim": "Arslan Rehmani operates at the intersection of corporate finance and full-stack software engineering as an ACCA-qualified finance professional turned developer.",
+      "metric": "Dual-domain",
+      "metricLabel": "Finance + engineering architecture",
+      "verificationSource": "Professional credentials and public production codebase history",
+      "verifiedDate": "2024-01-01",
+      "status": "VERIFIED",
+      "details": "Brings general ledger rigor and internal controls to automated software pipelines."
+    },
+    {
+      "id": "ev-trust-01",
+      "category": "trust",
+      "subject": "Client Ownership",
+      "caseType": "Client work",
+      "maturity": "Running in production",
+      "claim": "Clients own 100% of their accounts, API keys, source code, and deployment infrastructure. No proprietary lock-in.",
+      "metric": "100% Owned",
+      "metricLabel": "Client infrastructure & code ownership",
+      "verificationSource": "Standard SOW IP Assignment & infrastructure handover clause",
+      "verifiedDate": "2024-01-01",
+      "status": "VERIFIED",
+      "details": "Systems are deployed directly to client cloud accounts (AWS, Supabase, Vercel, GCP)."
+    },
+    {
+      "id": "ev-trust-02",
+      "category": "trust",
+      "subject": "Deterministic Validation",
+      "caseType": "Client work",
+      "maturity": "Running in production",
+      "claim": "LLM agent outputs are never written directly to databases without programmatic schema validation and business rule checks.",
+      "metric": "Zero bypass",
+      "metricLabel": "Strict schema gate before DB write",
+      "verificationSource": "Vanthrope architectural guardrail specification",
+      "verifiedDate": "2024-01-01",
+      "status": "VERIFIED",
+      "details": "Zod / Pydantic schemas enforce type, range, and relationship constraints."
+    },
+    {
+      "id": "ev-trust-03",
+      "category": "trust",
+      "subject": "Audit Trail & Rollback",
+      "caseType": "Client work",
+      "maturity": "Running in production",
+      "claim": "Every automated action, API call, and human approval creates an immutable audit trail with instant revert capability.",
+      "metric": "Full audit",
+      "metricLabel": "Immutable event log on all actions",
+      "verificationSource": "Vanthrope operational audit log specification",
+      "verifiedDate": "2024-01-01",
+      "status": "VERIFIED",
+      "details": "Action logs record input hash, agent output, supervisor sign-off, and DB transaction ID."
+    }
+  ]
+}

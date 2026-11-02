@@ -1,58 +1,66 @@
 'use client';
 
 import { useState } from 'react';
-import { Menu, X } from 'lucide-react';
+import Link from 'next/link';
+import { Menu, X, ChevronDown } from 'lucide-react';
+
+import VanthropeLogo from '@/components/brand-logo';
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const navLinks = [
-    { label: 'Capabilities', href: '#capability' },
-    { label: 'How We Work', href: '#how-we-work' },
-    { label: 'Operational Results', href: '#proof' },
-    { label: 'The Firm', href: '#founder' },
+  const mainLinks = [
+    { label: 'Solutions', href: '/solutions' },
+    { label: 'Agents', href: '/agents' },
+    { label: 'Services', href: '/services' },
+    { label: 'Work', href: '/work' },
+    { label: 'Method', href: '/method' },
+    { label: 'Tools', href: '/tools' },
+    { label: 'Security', href: '/security' },
+    { label: 'Proof', href: '/proof-ledger' },
+    { label: 'Fit', href: '/fit' },
   ];
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 bg-bg-primary/80 backdrop-blur-md border-b border-border-color">
+    <header className="fixed top-0 left-0 w-full z-50 bg-bg-primary/90 backdrop-blur-md border-b border-border-color">
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-        {/* Logo */}
-        <a 
-          href="#" 
-          className="flex items-center text-text-primary hover:opacity-80 transition-steel"
+        {/* Brand Logo */}
+        <Link
+          href="/"
+          className="flex items-center gap-2.5 text-text-primary hover:opacity-85 transition-steel"
           style={{ minHeight: '44px' }}
         >
-          <span className="text-accent-steel font-black text-xl mr-2">{"//"}</span>
+          <VanthropeLogo className="w-7 h-7" />
           <span className="font-black tracking-tight text-lg uppercase">Vanthrope</span>
-        </a>
+        </Link>
 
         {/* Desktop Navigation Links */}
-        <nav className="hidden md:flex items-center gap-8">
-          {navLinks.map((link) => (
-            <a
+        <nav className="hidden lg:flex items-center gap-6 xl:gap-8">
+          {mainLinks.map((link) => (
+            <Link
               key={link.label}
               href={link.href}
               className="text-xs tracking-widest uppercase font-semibold text-text-muted hover:text-text-primary transition-steel"
               style={{ minHeight: '44px', display: 'inline-flex', alignItems: 'center' }}
             >
               {link.label}
-            </a>
+            </Link>
           ))}
-          <a
-            href="#engagement"
-            className="border border-accent-steel text-text-primary hover:bg-accent-steel hover:text-bg-primary text-xs font-semibold tracking-widest uppercase px-5 py-3 rounded-none transition-steel"
+          <Link
+            href="/contact"
+            className="border border-accent-steel text-text-primary hover:bg-accent-steel hover:text-bg-primary text-xs font-semibold tracking-widest uppercase px-5 py-3 rounded-none transition-steel ml-2"
             style={{ minHeight: '44px', display: 'inline-flex', alignItems: 'center' }}
           >
-            Assess Operation
-          </a>
+            Book Discovery Call
+          </Link>
         </nav>
 
         {/* Mobile Hamburger Button */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden text-text-primary hover:text-accent-steel transition-steel flex items-center justify-center"
+          className="lg:hidden text-text-primary hover:text-accent-steel transition-steel flex items-center justify-center"
           style={{ minWidth: '44px', minHeight: '44px' }}
-          aria-label="Toggle menu"
+          aria-label="Toggle navigation menu"
         >
           {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
         </button>
@@ -60,27 +68,37 @@ export default function Navigation() {
 
       {/* Mobile Drawer Overlay */}
       {isOpen && (
-        <div className="fixed inset-0 top-20 z-40 bg-bg-primary flex flex-col justify-start px-8 py-12 md:hidden">
-          <nav className="flex flex-col gap-8">
-            {navLinks.map((link) => (
-              <a
+        <div className="fixed inset-0 top-20 z-40 bg-bg-primary flex flex-col justify-start px-8 py-8 lg:hidden overflow-y-auto border-t border-border-color">
+          <nav className="flex flex-col gap-5">
+            {mainLinks.map((link) => (
+              <Link
                 key={link.label}
                 href={link.href}
                 onClick={() => setIsOpen(false)}
-                className="text-lg tracking-widest uppercase font-bold text-text-primary border-b border-border-color pb-4 hover:text-accent-steel transition-steel"
-                style={{ minHeight: '44px', display: 'block' }}
+                className="text-sm tracking-widest uppercase font-bold text-text-primary border-b border-border-color pb-3 hover:text-accent-steel transition-steel"
+                style={{ minHeight: '44px', display: 'flex', alignItems: 'center' }}
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
-            <a
-              href="#engagement"
-              onClick={() => setIsOpen(false)}
-              className="w-full text-center border border-accent-steel text-text-primary hover:bg-accent-steel hover:text-bg-primary text-sm font-bold tracking-widest uppercase py-4 rounded-none transition-steel mt-4"
-              style={{ minHeight: '44px', display: 'block' }}
-            >
-              Assess Operation
-            </a>
+            <div className="pt-2 flex flex-col gap-3">
+              <Link
+                href="/about"
+                onClick={() => setIsOpen(false)}
+                className="text-xs tracking-widest uppercase font-semibold text-text-muted hover:text-text-primary py-2"
+                style={{ minHeight: '44px', display: 'flex', alignItems: 'center' }}
+              >
+                About Founder & Firm
+              </Link>
+              <Link
+                href="/contact"
+                onClick={() => setIsOpen(false)}
+                className="w-full text-center border border-accent-steel text-text-primary hover:bg-accent-steel hover:text-bg-primary text-xs font-bold tracking-widest uppercase py-4 rounded-none transition-steel"
+                style={{ minHeight: '44px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+              >
+                Book a 20-minute discovery call
+              </Link>
+            </div>
           </nav>
         </div>
       )}
