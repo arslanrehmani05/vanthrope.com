@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import { GoogleAnalytics } from '@next/third-parties/google';
 import ScopeAssistantModal from '@/components/common/scope-assistant-modal';
@@ -9,17 +9,31 @@ const inter = Inter({
   variable: "--font-inter",
 });
 
+export const viewport: Viewport = {
+  themeColor: "#0A0A0A",
+  colorScheme: "dark",
+  width: "device-width",
+  initialScale: 1,
+};
+
 export const metadata: Metadata = {
   title: "Vanthrope | Operational Systems & Autonomous Agents",
   description: "Custom operational software, deterministic data pipelines, and autonomous agent systems for mid-market enterprises.",
   metadataBase: new URL("https://vanthrope.com"),
+  manifest: "/manifest.webmanifest",
   icons: {
     icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/favicon.svg', type: 'image/svg+xml' },
       { url: '/icon.svg', type: 'image/svg+xml' },
       { url: '/icon.png', sizes: '32x32', type: 'image/png' },
+      { url: '/icons/icon-192.png', sizes: '192x192', type: 'image/png' },
+      { url: '/icons/icon-512.png', sizes: '512x512', type: 'image/png' },
     ],
+    shortcut: ['/favicon.ico'],
     apple: [
-      { url: '/icon.png', sizes: '180x180', type: 'image/png' },
+      { url: '/apple-icon.png', sizes: '180x180', type: 'image/png' },
+      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
     ],
   },
   alternates: {
