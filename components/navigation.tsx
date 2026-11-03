@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { Menu, X, ChevronDown } from 'lucide-react';
+import { Menu, X, ChevronDown, ArrowRight } from 'lucide-react';
 
 import VanthropeLogo from '@/components/brand-logo';
 
@@ -45,10 +45,13 @@ export default function Navigation() {
           ))}
           <Link
             href="/contact"
-            className="btn-primary !pl-5 !pr-5 !py-2 !text-xs font-semibold uppercase tracking-wider rounded-full hover:opacity-90 transition-all cursor-pointer ml-2"
+            className="btn-primary !pl-4 !pr-1.5 !py-1.5 !text-xs font-semibold flex items-center gap-2 group cursor-pointer ml-2"
             style={{ minHeight: '38px', display: 'inline-flex', alignItems: 'center' }}
           >
-            Book Discovery Call
+            <span>Book 20-min call</span>
+            <span className="btn-arrow-badge w-6 h-6">
+              <ArrowRight className="w-3 h-3 text-white" />
+            </span>
           </Link>
         </nav>
 

@@ -50,7 +50,7 @@ export const METHOD_STAGES = [
 
 export default function FiveStepMethod() {
   return (
-    <section id="method" className="bg-bg-primary py-32 sm:py-40 border-b border-border-color">
+    <section id="method" className="py-32 sm:py-40 border-b border-border-color relative">
       <div className="max-w-7xl mx-auto px-6">
         
         <span className="eyebrow mb-6">
@@ -59,7 +59,7 @@ export default function FiveStepMethod() {
 
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-20 text-left">
           <div className="max-w-3xl">
-            <h2 className="text-3xl md:text-5xl font-medium tracking-tight text-text-primary leading-tight">
+            <h2 className="headline text-3xl md:text-5xl font-medium tracking-tight text-text-primary leading-tight">
               Predictable delivery. No endless science projects.
             </h2>
             <p className="text-base text-text-muted mt-4 font-normal">
@@ -80,7 +80,7 @@ export default function FiveStepMethod() {
           {METHOD_STAGES.map((s) => (
             <div
               key={s.step}
-              className="bg-bg-secondary rounded-2xl border border-border-color p-8 sm:p-10 text-left transition-all hover:border-white/20"
+              className="bg-bg-secondary/70 backdrop-blur-md rounded-2xl border border-border-color p-8 sm:p-10 text-left transition-all hover:border-white/20 hover:-translate-y-0.5"
             >
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
                 

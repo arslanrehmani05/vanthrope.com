@@ -27,14 +27,14 @@ export default function VerifiedProofStrip() {
   ];
 
   return (
-    <div className="w-full bg-bg-surface border-y border-border-color py-12 px-6">
+    <div className="w-full bg-bg-secondary/40 border-y border-border-color py-14 px-6 backdrop-blur-md">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-wrap items-center justify-between gap-4 mb-8">
           <div>
             <span className="eyebrow mb-1">
               Truth Gate Verified
             </span>
-            <h2 className="text-xl md:text-2xl font-medium text-text-primary tracking-tight">
+            <h2 className="headline text-xl md:text-2xl font-medium text-text-primary tracking-tight">
               Proven Operational Outcomes
             </h2>
           </div>
@@ -52,7 +52,7 @@ export default function VerifiedProofStrip() {
           {metrics.map((item, idx) => (
             <div
               key={idx}
-              className="bg-bg-secondary p-6 rounded-2xl border border-border-color flex flex-col justify-between text-left transition-all hover:border-white/20"
+              className="bg-bg-secondary/70 p-6 rounded-2xl border border-border-color flex flex-col justify-between text-left transition-all hover:border-white/20 backdrop-blur-md"
             >
               <div>
                 <TruthBadge

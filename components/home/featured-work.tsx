@@ -4,7 +4,7 @@ import TruthBadge from '@/components/common/truth-badge';
 
 export default function FeaturedWork() {
   return (
-    <section id="work" className="bg-bg-primary py-32 sm:py-40 border-b border-border-color">
+    <section id="work" className="py-32 sm:py-40 border-b border-border-color relative">
       <div className="max-w-7xl mx-auto px-6">
         
         <span className="eyebrow mb-6">
@@ -13,7 +13,7 @@ export default function FeaturedWork() {
 
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-20 text-left">
           <div className="max-w-3xl">
-            <h2 className="text-3xl md:text-5xl font-medium tracking-tight text-text-primary leading-tight">
+            <h2 className="headline text-3xl md:text-5xl font-medium tracking-tight text-text-primary leading-tight">
               Real systems running in production.
             </h2>
             <p className="text-base text-text-muted mt-4 font-normal">
@@ -34,7 +34,7 @@ export default function FeaturedWork() {
           {SEED_CASE_STUDIES.map((cs) => (
             <div
               key={cs.slug}
-              className="bg-bg-secondary rounded-2xl border border-border-color p-8 flex flex-col justify-between text-left transition-all hover:border-white/20"
+              className="bg-bg-secondary/70 backdrop-blur-md rounded-2xl border border-border-color p-8 flex flex-col justify-between text-left transition-all hover:border-white/20 hover:-translate-y-0.5"
             >
               <div>
                 <TruthBadge

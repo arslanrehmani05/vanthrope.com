@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function Founder() {
   return (
-    <section id="founder" className="bg-bg-primary py-40 sm:py-44 border-b border-border-color">
+    <section id="founder" className="py-32 sm:py-40 border-b border-border-color relative">
       <div className="max-w-7xl mx-auto px-6">
         
         {/* Section Grid */}
@@ -13,7 +13,7 @@ export default function Founder() {
             <span className="eyebrow">
               The Firm
             </span>
-            <h2 className="text-3xl md:text-5xl font-medium tracking-tight text-text-primary leading-tight">
+            <h2 className="headline text-3xl md:text-5xl font-medium tracking-tight text-text-primary leading-tight">
               Founded by Arslan Rehmani.
             </h2>
             <div className="space-y-4 text-sm text-text-muted leading-relaxed font-normal">
@@ -32,7 +32,7 @@ export default function Founder() {
           {/* Right Column: Headshot and Website Link (5 columns) */}
           <div className="lg:col-span-5 flex flex-col items-center gap-6">
             {/* Portrait Image container with rounded-2xl */}
-            <div className="relative w-64 h-64 md:w-72 md:h-72 rounded-2xl border border-border-color overflow-hidden bg-bg-secondary">
+            <div className="relative w-64 h-64 md:w-72 md:h-72 rounded-2xl border border-border-color overflow-hidden bg-bg-secondary/70 backdrop-blur-md shadow-2xl">
               <Image
                 src="/headshot.png"
                 alt="Arslan Rehmani portrait"

@@ -80,7 +80,7 @@ export const SOLUTIONS_LIST = [
 
 export default function SolutionsGrid() {
   return (
-    <section id="solutions" className="bg-bg-secondary py-32 sm:py-40 border-b border-border-color">
+    <section id="solutions" className="py-32 sm:py-40 border-b border-border-color relative">
       <div className="max-w-7xl mx-auto px-6">
         
         <span className="eyebrow mb-6">
@@ -89,7 +89,7 @@ export default function SolutionsGrid() {
 
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-16 text-left">
           <div className="max-w-3xl">
-            <h2 className="text-3xl md:text-5xl font-medium tracking-tight text-text-primary leading-tight">
+            <h2 className="headline text-3xl md:text-5xl font-medium tracking-tight text-text-primary leading-tight">
               We fix the specific friction slowing your business down.
             </h2>
             <p className="text-base text-text-muted mt-4 font-normal">
@@ -113,7 +113,7 @@ export default function SolutionsGrid() {
               <Link
                 key={sol.slug}
                 href={`/solutions/${sol.slug}`}
-                className="group bg-bg-primary rounded-2xl border border-border-color hover:border-white/20 p-6 flex flex-col justify-between transition-all text-left"
+                className="group bg-bg-secondary/70 backdrop-blur-md rounded-2xl border border-border-color hover:border-white/20 hover:-translate-y-0.5 p-6 flex flex-col justify-between transition-all text-left"
                 style={{ minHeight: '300px' }}
               >
                 <div>

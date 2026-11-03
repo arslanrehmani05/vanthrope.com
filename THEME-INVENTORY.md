@@ -62,14 +62,12 @@ All colors are defined as CSS variables in `app/globals.css` and mapped in `tail
 
 ## 5. Component Primitives Inventory
 
-1. **Header Navigation:** Fixed header (`h-20 bg-bg-primary/80 backdrop-blur-md border-b border-border-color`), steel brand mark, uppercase tracking-widest links, primary CTA button, mobile drawer.
-2. **Hero:** Full-bleed background grid, high-impact outcome headline, plain subheadline, primary CTA, verified proof strip.
-3. **Capability / Solution Card:** `bg-bg-surface` or `bg-bg-secondary`, `border-t border-accent-steel` or `border border-border-steel/20`, uppercase title, body copy, steel directional link `→`.
-4. **Step / Method Item:** High-contrast 2-digit numeral (`text-5xl sm:text-6xl font-black text-accent-steel`), step title, description, requirements, failure-mode disclosure.
-5. **Metric Proof Card:** `bg-bg-secondary border border-border-steel/20 p-8`, case type badge, maturity badge, before/after values (`text-2xl sm:text-3xl font-black text-text-primary`), verified evidence ID chip.
-6. **Form Inputs:** `bg-bg-surface border border-border-color text-text-primary focus:border-accent-steel text-sm p-4 rounded-none outline-none transition-steel`.
-7. **Badges:**
-   * Case Type Badge: `border border-accent-steel/40 text-accent-steel text-[10px] font-bold tracking-widest uppercase px-3 py-1`
-   * Maturity Badge: `border border-accent-gold/40 text-accent-gold text-[10px] font-bold tracking-widest uppercase px-3 py-1`
-   * Verification Badge: `text-[10px] font-mono tracking-wider text-text-muted`
-8. **Footer:** 3-column structured grid (`max-w-7xl mx-auto px-6 pt-24 pb-12`), legal disclosures, entity placeholders, navigation index, copyright bar.
+1. **Header Navigation:** Fixed header (`h-20 bg-bg-primary/90 backdrop-blur-md border-b border-border-color`), monogram vector brand mark, sentence-case navigation links, primary CTA with arrow badge (`.btn-primary` + `.btn-arrow-badge`).
+2. **Hero:** Ambient radial depth lighting, sentence-case `.headline` with italic accent, dual CTA pills (`.btn-primary` and `.btn-ghost`), 4-metric production verification strip, and interactive simulator.
+3. **Capability / Solution Card:** `bg-bg-secondary/70 backdrop-blur-md rounded-2xl border border-border-color p-6 hover:border-white/20 hover:-translate-y-0.5`, sentence-case title, body copy, directional link `→`.
+4. **Step / Method Item:** Frosted panel (`bg-bg-secondary/70 backdrop-blur-md rounded-2xl border border-border-color p-8 sm:p-10`), monospace numeral (`text-3xl sm:text-4xl font-mono text-text-primary`), deliverables, prerequisites, and failure-mode disclosures.
+5. **Metric Proof Card:** `bg-bg-secondary/70 backdrop-blur-md rounded-2xl border border-border-color p-6 md:p-8`, Truth Gate badges, verified evidence ID chip.
+6. **Buttons:**
+   * `.btn-primary`: Crisp off-white pill (`bg-text-primary text-bg-primary font-medium text-sm rounded-full px-6 py-2.5 shadow-[0_4px_18px_rgba(0,0,0,0.35)] hover:-translate-y-0.5`) with embedded dark `.btn-arrow-badge`.
+   * `.btn-ghost`: Frosted pill (`bg-bg-secondary text-text-primary border border-border-color rounded-full px-6 py-2.5 hover:bg-bg-surface hover:border-border-gold`).
+7. **Footer:** Multi-column structured grid (`max-w-7xl mx-auto px-6 pt-24 pb-12 bg-bg-secondary/40 backdrop-blur-md border-t border-border-color`), mono uppercase category headers, legal disclosures, entity placeholders, navigation index, copyright bar.

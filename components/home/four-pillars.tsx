@@ -33,7 +33,7 @@ export default function FourPillars() {
   ];
 
   return (
-    <section className="bg-bg-primary py-32 sm:py-40 border-b border-border-color">
+    <section className="py-32 sm:py-40 border-b border-border-color relative">
       <div className="max-w-7xl mx-auto px-6">
         
         <span className="eyebrow mb-6">
@@ -41,7 +41,7 @@ export default function FourPillars() {
         </span>
 
         <div className="flex flex-col gap-6 mb-20 text-left max-w-4xl">
-          <h2 className="text-3xl md:text-5xl font-medium tracking-tight text-text-primary leading-tight">
+          <h2 className="headline text-3xl md:text-5xl font-medium tracking-tight text-text-primary leading-tight">
             How we engineer systems that keep working.
           </h2>
           <p className="text-base text-text-muted leading-relaxed max-w-2xl font-normal">
@@ -54,7 +54,7 @@ export default function FourPillars() {
           {pillars.map((pillar, idx) => (
             <div
               key={idx}
-              className="bg-bg-secondary rounded-2xl border border-border-color p-8 sm:p-10 flex flex-col justify-between text-left transition-all hover:border-white/20"
+              className="bg-bg-secondary/70 backdrop-blur-md rounded-2xl border border-border-color p-8 sm:p-10 flex flex-col justify-between text-left transition-all hover:border-white/20 hover:-translate-y-0.5"
             >
               <div>
                 <div className="flex items-center justify-between pb-6 border-b border-border-color mb-6">

@@ -29,7 +29,7 @@ export default function TrustTeaser() {
   ];
 
   return (
-    <section className="bg-bg-secondary py-32 sm:py-40 border-b border-border-color">
+    <section className="py-32 sm:py-40 border-b border-border-color relative">
       <div className="max-w-7xl mx-auto px-6">
         
         <span className="eyebrow mb-6">
@@ -38,7 +38,7 @@ export default function TrustTeaser() {
 
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-20 text-left">
           <div className="max-w-3xl">
-            <h2 className="text-3xl md:text-5xl font-medium tracking-tight text-text-primary leading-tight">
+            <h2 className="headline text-3xl md:text-5xl font-medium tracking-tight text-text-primary leading-tight">
               Safety you can verify. Not marketing promises.
             </h2>
             <p className="text-base text-text-muted mt-4 font-normal">
@@ -59,7 +59,7 @@ export default function TrustTeaser() {
           {claims.map((c, idx) => (
             <div
               key={idx}
-              className="bg-bg-primary rounded-2xl border border-border-color p-8 flex flex-col justify-between text-left transition-all hover:border-white/20"
+              className="bg-bg-secondary/70 backdrop-blur-md rounded-2xl border border-border-color p-8 flex flex-col justify-between text-left transition-all hover:border-white/20 hover:-translate-y-0.5"
             >
               <div>
                 <TruthBadge evidenceId={c.evidence.id} className="mb-4" />
