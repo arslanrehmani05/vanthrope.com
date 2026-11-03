@@ -114,7 +114,7 @@ export default function SyntheticWorkflowDemo() {
         <div className="flex items-center gap-2">
           <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse" />
           <span className="text-xs font-mono font-medium tracking-wider uppercase text-text-primary">
-            Deterministic Pipeline Simulator
+            Synthetic Workflow Demo
           </span>
           <span className="text-[10px] rounded-full border border-border-color text-text-subtle uppercase px-2.5 py-0.5 ml-2 font-mono">
             Synthetic Data
@@ -179,8 +179,8 @@ export default function SyntheticWorkflowDemo() {
 
       {/* Footer explanation */}
       <div className="mt-6 pt-4 border-t border-border-color flex flex-wrap items-center justify-between text-[11px] text-text-subtle font-mono">
-        <span>Cycle Duration: 20s Automated Loop</span>
-        <span>Human-in-the-Loop: Strict Exception Routing</span>
+        <span>Cycle Duration: 20 seconds total</span>
+        <span>Human Oversight: Mandatory on Variance</span>
       </div>
     </div>
   );

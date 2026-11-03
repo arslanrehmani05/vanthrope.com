@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import { ArrowRight, CheckCircle2 } from 'lucide-react';
 
 export default function FinalCta() {
   return (
@@ -11,7 +10,7 @@ export default function FinalCta() {
         </span>
 
         <h2 className="headline text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight text-text-primary leading-tight mb-6">
-          Ready to eliminate your highest-drag manual bottleneck?
+          Ready to diagnose your operational friction?
         </h2>
 
         <p className="text-base text-text-muted max-w-2xl font-normal leading-relaxed mb-10">
@@ -21,35 +20,29 @@ export default function FinalCta() {
         <div className="flex flex-wrap items-center justify-center gap-4">
           <Link
             href="/contact"
-            className="btn-primary !px-7 !py-3.5 !text-sm font-semibold flex items-center gap-3 group cursor-pointer"
+            className="btn-primary !px-7 !py-3.5 !text-sm font-semibold rounded-full shadow-lg hover:-translate-y-0.5 transition-all"
           >
-            <span>Schedule 20-min Scoping Call</span>
-            <span className="btn-arrow-badge w-6 h-6">
-              <ArrowRight className="w-3.5 h-3.5 text-white" />
-            </span>
+            Schedule 20-min Scoping Call
           </Link>
           <Link
             href="/tools"
-            className="btn-ghost !px-6 !py-3.5 !text-sm font-medium flex items-center gap-2 cursor-pointer group"
+            className="btn-ghost !px-7 !py-3.5 !text-sm font-medium rounded-full transition-all"
           >
-            <span>Run Operational Diagnostic</span>
-            <ArrowRight className="w-4 h-4 text-text-muted group-hover:translate-x-0.5 transition-transform" />
+            Run Operational Diagnostic &rarr;
+          </Link>
+          <Link
+            href="/work"
+            className="inline-flex items-center justify-center rounded-full px-5 py-3.5 text-sm font-medium text-text-muted hover:text-text-primary transition-all"
+          >
+            Explore case studies &rarr;
           </Link>
         </div>
 
-        {/* Verification Ticks */}
-        <div className="mt-8 flex flex-wrap items-center justify-center gap-6 text-xs font-mono text-text-subtle">
-          <div className="flex items-center gap-1.5">
-            <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
-            <span>Direct founder response within 24h</span>
-          </div>
-          <div className="flex items-center gap-1.5">
-            <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
-            <span>Zero high-pressure sales pitches</span>
-          </div>
+        <div className="mt-12 text-xs font-mono text-text-subtle">
+          Direct founder response guaranteed within 24 business hours.
         </div>
 
-        <div className="mt-10 pt-8 border-t border-border-color/60 max-w-xl text-center text-xs font-mono text-text-subtle">
+        <div className="mt-8 pt-8 border-t border-border-color/60 max-w-xl text-center text-xs font-mono text-text-subtle">
           <span>Led by Arslan Rehmani, Founder &amp; Principal Systems Architect. For personal engineering field notes, open proof ledger, and interactive diagnostic scans, visit </span>
           <a
             href="https://arslanrehmani.com"

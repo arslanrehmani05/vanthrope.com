@@ -62,8 +62,8 @@ All colors are defined as CSS variables in `app/globals.css` and mapped in `tail
 
 ## 5. Component Primitives Inventory
 
-1. **Header Navigation:** Fixed header (`h-20 bg-bg-primary/90 backdrop-blur-md border-b border-border-color`), monogram vector brand mark, sentence-case navigation links, primary CTA with arrow badge (`.btn-primary` + `.btn-arrow-badge`).
-2. **Hero:** Ambient radial depth lighting, sentence-case `.headline` with italic accent, dual CTA pills (`.btn-primary` and `.btn-ghost`), 4-metric production verification strip, and interactive simulator.
+1. **Header Navigation:** Fixed header (`h-20 bg-bg-primary/90 backdrop-blur-md border-b border-border-color`), monogram vector brand mark, sentence-case navigation links, primary CTA (`Book Discovery Call`, `.btn-primary`).
+2. **Hero:** Ambient radial depth lighting, sentence-case `.headline`, dual CTA pills (`.btn-primary` and `.btn-ghost`), verified proof strip, and interactive simulator.
 3. **Capability / Solution Card:** `bg-bg-secondary/70 backdrop-blur-md rounded-2xl border border-border-color p-6 hover:border-white/20 hover:-translate-y-0.5`, sentence-case title, body copy, directional link `→`.
 4. **Step / Method Item:** Frosted panel (`bg-bg-secondary/70 backdrop-blur-md rounded-2xl border border-border-color p-8 sm:p-10`), monospace numeral (`text-3xl sm:text-4xl font-mono text-text-primary`), deliverables, prerequisites, and failure-mode disclosures.
 5. **Metric Proof Card:** `bg-bg-secondary/70 backdrop-blur-md rounded-2xl border border-border-color p-6 md:p-8`, Truth Gate badges, verified evidence ID chip.
