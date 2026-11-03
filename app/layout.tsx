@@ -68,7 +68,7 @@ const structuredData = {
           "https://linkedin.com/in/arslanrehmani"
         ]
       },
-      "description": "High-end operational AI agency that designs, builds, and deploys custom software, deterministic data pipelines, and autonomous agent systems for mid-market enterprises."
+      "description": "High-end operational AI agency engineering custom software, deterministic pipelines, and autonomous agent swarms for mid-market enterprises."
     },
     {
       "@type": "ProfessionalService",

@@ -86,13 +86,13 @@ export default function AboutPage() {
                   As Founder &amp; Principal Systems Architect, Arslan has engineered systems operating at scale across mission-critical environments: TextileMode ERP (managing PKR 3 crore / $107k/mo across 27 industrial looms with 10 clerks compressed to 1 review operator) and Belhide Operational Intelligence (eliminating 14% grading discrepancies across 3,000+ daily hides).
                 </p>
 
-                <div className="p-4 bg-bg-primary border border-border-color text-xs text-text-muted leading-relaxed font-mono rounded-lg">
-                  For Arslan&apos;s personal engineering field notes, open proof ledger, and interactive diagnostic scans, visit{' '}
+                <div className="p-4 bg-bg-secondary/70 backdrop-blur-md border border-border-color text-xs text-text-muted leading-relaxed font-mono rounded-xl">
+                  Vanthrope was founded by Arslan Rehmani, Principal Systems Architect. For Arslan&apos;s raw engineering field notes, open proof ledger, and interactive diagnostic scans, visit{' '}
                   <a
                     href="https://arslanrehmani.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-text-primary underline hover:text-text-muted transition-colors inline-flex items-center gap-1 font-semibold"
+                    className="text-text-primary underline hover:text-accent-gold transition-colors inline-flex items-center gap-1 font-semibold"
                   >
                     arslanrehmani.com <ArrowRight className="w-3.5 h-3.5" />
                   </a>

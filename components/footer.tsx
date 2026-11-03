@@ -29,14 +29,14 @@ export default function Footer() {
                 <span className="text-text-muted font-medium">Founder-led (Arslan Rehmani, Principal Systems Architect)</span>
               </div>
               <div>
-                <span>Founder ledger: </span>
+                <span>Founder ledger &amp; diagnostics: </span>
                 <a
                   href="https://arslanrehmani.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-text-primary underline hover:text-text-muted transition-colors"
+                  className="text-text-primary underline hover:text-accent-gold transition-colors"
                 >
-                  arslanrehmani.com
+                  arslanrehmani.com &rarr;
                 </a>
               </div>
             </div>
